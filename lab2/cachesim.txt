@@ -1,0 +1,429 @@
+// See LICENSE for license details.
+
+#include "cachesim.h"
+#include "common.h"
+#include <cstdlib>
+#include <iostream>
+#include <iomanip>
+
+cache_sim_t::cache_sim_t(size_t _sets, size_t _ways, size_t _linesz, const char* _name)
+: sets(_sets), ways(_ways), linesz(_linesz), name(_name), log(false)
+{
+  init();
+}
+
+static void help()
+{
+  std::cerr << "Cache configurations must be of the form" << std::endl;
+  std::cerr << "  sets:ways:blocksize" << std::endl;
+  std::cerr << "where sets, ways, and blocksize are positive integers, with" << std::endl;
+  std::cerr << "sets and blocksize both powers of two and blocksize at least 8." << std::endl;
+  exit(1);
+}
+
+cache_sim_t* cache_sim_t::construct(const char* config, const char* name)
+{
+  const char* wp = strchr(config, ':');
+  if (!wp++) help();
+  const char* bp = strchr(wp, ':');
+  if (!bp++) help();
+
+  size_t sets = atoi(std::string(config, wp).c_str());
+  size_t ways = atoi(std::string(wp, bp).c_str());
+  size_t linesz = atoi(bp);
+
+  if (ways > 4 /* empirical */ && sets == 1)
+    return new fa_cache_sim_t(ways, linesz, name);
+  return new cache_sim_t(sets, ways, linesz, name);
+}
+
+void cache_sim_t::init()
+{
+  if(sets == 0 || (sets & (sets-1)))
+    help();
+  if(linesz < 8 || (linesz & (linesz-1)))
+    help();
+
+  idx_shift = 0;
+  for (size_t x = linesz; x>1; x >>= 1)
+    idx_shift++;
+
+  tags = new uint64_t[sets*ways]();
+  read_accesses = 0;
+  read_misses = 0;
+  bytes_read = 0;
+  write_accesses = 0;
+  write_misses = 0;
+  bytes_written = 0;
+  writebacks = 0;
+
+
+  // miss_handler = NULL;
+  if(name != "L2") miss_handler = new fa_cache_sim_t(ways*2,linesz,"L2");
+  else miss_handler = NULL;
+
+
+  count = new size_t*[sets];
+  for(size_t i = 0;i < sets;++i){
+        count[i] = new size_t[ways];
+        memset(count[i],0,ways*sizeof(size_t));
+  }
+
+}
+
+cache_sim_t::cache_sim_t(const cache_sim_t& rhs)
+ : sets(rhs.sets), ways(rhs.ways), linesz(rhs.linesz),
+   idx_shift(rhs.idx_shift), name(rhs.name), log(false)
+{
+  tags = new uint64_t[sets*ways];
+  memcpy(tags, rhs.tags, sets*ways*sizeof(uint64_t));
+}
+
+cache_sim_t::~cache_sim_t()
+{
+  print_stats();
+  delete [] tags;
+  delete miss_handler;
+  delete [][] count;
+}
+
+void cache_sim_t::print_stats()
+{
+  if(read_accesses + write_accesses == 0)
+    return;
+
+  float mr = 100.0f*(read_misses+write_misses)/(read_accesses+write_accesses);
+
+  std::cout << std::setprecision(3) << std::fixed;
+  std::cout << name << " ";
+  std::cout << "Bytes Read:            " << bytes_read << std::endl;
+  std::cout << name << " ";
+  std::cout << "Bytes Written:         " << bytes_written << std::endl;
+  std::cout << name << " ";
+  std::cout << "Read Accesses:         " << read_accesses << std::endl;
+  std::cout << name << " ";
+  std::cout << "Write Accesses:        " << write_accesses << std::endl;
+  std::cout << name << " ";
+  std::cout << "Read Misses:           " << read_misses << std::endl;
+  std::cout << name << " ";
+  std::cout << "Write Misses:          " << write_misses << std::endl;
+  std::cout << name << " ";
+  std::cout << "Writebacks:            " << writebacks << std::endl;
+  std::cout << name << " ";
+  std::cout << "Miss Rate:             " << mr << '%' << std::endl;
+  std::cout << name << " ";
+  std::cout << "Conflict Misses:             " << conflict_misses << std::endl;
+}
+
+uint64_t* cache_sim_t::check_tag(uint64_t addr)
+{
+  size_t idx = (addr >> idx_shift) & (sets-1);
+  size_t tag = (addr >> idx_shift) | VALID;
+
+  for (size_t i = 0; i < ways; i++)
+
+
+
+    if (tag == (tags[idx*ways + i] & ~DIRTY)){
+
+      //LRU & MRU
+      // for(size_t j = 0;j < ways;++j){
+      //   if(j == i) count[idx][j] = 0;
+      //   else count[idx][j] += 1;
+      // }
+
+      // LFU
+      count[idx][i] += 1;
+
+
+      return &tags[idx*ways + i];
+    }
+
+  return NULL;
+}
+
+
+// uint64_t cache_sim_t::victimize(uint64_t addr)
+// {
+//   size_t idx = (addr >> idx_shift) & (sets-1);
+//   size_t way = lfsr.next() % ways;
+//   uint64_t victim = tags[idx*ways + way];
+//   tags[idx*ways + way] = (addr >> idx_shift) | VALID;
+//   return victim;
+// }
+
+
+uint64_t cache_sim_t::victimize(uint64_t addr)
+{
+  size_t idx = (addr >> idx_shift) & (sets-1);
+  // size_t way = LRU(idx);
+  size_t way = MRU();
+  // size_t way = LFU();
+  // size_t way = FIFO();
+  uint64_t victim = tags[idx*ways + way];
+  tags[idx*ways + way] = (addr >> idx_shift) | VALID;
+  return victim;
+}
+
+size_t cache_sim_t::LRU(size_t idx){
+  size_t maxIdx = 0;
+  size_t max = count[idx][0];
+  for(size_t i = 1;i < ways;++i){
+    if(count[idx][i]>max){
+      maxIdx = i;
+      max = count[idx][i];
+    } 
+  }
+  return maxIdx;
+}
+
+size_t cache_sim_t::MRU(size_t idx){
+  size_t minIdx = 0;
+  size_t min = count[idx][0];
+  for(size_t i = 1;i < ways;++i){
+    if(count[idx][i]<min){
+      minIdx = i;
+      min = count[idx][i];
+    } 
+  }
+  return minIdx;
+}
+
+size_t cache_sim_t::LFU(size_t idx){
+  size_t minIdx = 0;
+  size_t min = count[idx][0];
+  for(size_t i = 1;i < ways;++i){
+    if(count[idx][i]<min){
+      minIdx = i;
+      min = count[idx][i];
+    } 
+  }
+  return minIdx;
+}
+
+size_t cache_sim_t::FIFO(size_t idx){
+  size_t minIdx = 0;
+  size_t min = count[idx][0];
+  for(size_t i = 1;i < ways;++i){
+    if(count[idx][i]<min){
+      minIdx = i;
+      min = count[idx][i];
+    } 
+  }
+  count[idx][minIdx] = LRU(idx)+1;
+  return minIdx;
+}
+
+
+
+void cache_sim_t::access(uint64_t addr, size_t bytes, bool store)
+{
+  store ? write_accesses++ : read_accesses++;
+  (store ? bytes_written : bytes_read) += bytes;
+
+  uint64_t* hit_way = check_tag(addr);
+
+  // if hit
+  if (likely(hit_way != NULL))
+  {
+    if (store)
+      *hit_way |= DIRTY;
+    return;
+  }
+
+  store ? write_misses++ : read_misses++;
+  if (log)
+  {
+    std::cerr << name << " "
+              << (store ? "write" : "read") << " miss 0x"
+              << std::hex << addr << std::endl;
+  }
+
+
+  // if miss, replace first
+  // victim = save the victim tag
+  uint64_t victim = victimize(addr);
+
+  // if dirty, write back
+  if ((victim & (VALID | DIRTY)) == (VALID | DIRTY))
+  {
+    uint64_t dirty_addr = (victim & ~(VALID | DIRTY)) << idx_shift;
+    if (miss_handler)
+      miss_handler->access(dirty_addr, linesz, true);
+    writebacks++;
+  }
+
+  if (miss_handler)
+    miss_handler->access(addr & ~(linesz-1), linesz, false);
+
+  if (store)
+    *check_tag(addr) |= DIRTY;
+}
+
+fa_cache_sim_t::fa_cache_sim_t(size_t ways, size_t linesz, const char* name)
+  : cache_sim_t(1, ways, linesz, name)
+{
+}
+
+uint64_t* fa_cache_sim_t::check_tag(uint64_t addr)
+{
+  auto it = tags.find(addr >> idx_shift);
+  return it == tags.end() ? NULL : &it->second;
+}
+
+uint64_t fa_cache_sim_t::victimize(uint64_t addr)
+{
+  uint64_t old_tag = 0;
+  if (tags.size() == ways)
+  {
+    auto it = tags.begin();
+    std::advance(it, lfsr.next() % ways);
+    old_tag = it->second;
+    tags.erase(it);
+  }
+  tags[addr >> idx_shift] = (addr >> idx_shift) | VALID;
+  return old_tag;
+}
+
+
+
+
+cachesim.h:
+
+// See LICENSE for license details.
+
+#ifndef _RISCV_CACHE_SIM_H
+#define _RISCV_CACHE_SIM_H
+
+#include "memtracer.h"
+#include <cstring>
+#include <string>
+#include <map>
+#include <cstdint>
+
+class lfsr_t
+{
+ public:
+  lfsr_t() : reg(1) {}
+  lfsr_t(const lfsr_t& lfsr) : reg(lfsr.reg) {}
+  uint32_t next() { return reg = (reg>>1)^(-(reg&1) & 0xd0000001); }
+ private:
+  uint32_t reg;
+};
+
+class cache_sim_t
+{
+ public:
+  cache_sim_t(size_t sets, size_t ways, size_t linesz, const char* name);
+  cache_sim_t(const cache_sim_t& rhs);
+  virtual ~cache_sim_t();
+
+  void access(uint64_t addr, size_t bytes, bool store);
+  void print_stats();
+  void set_miss_handler(cache_sim_t* mh) { miss_handler = mh; }
+  void set_log(bool _log) { log = _log; }
+
+  static cache_sim_t* construct(const char* config, const char* name);
+
+ protected:
+  static const uint64_t VALID = 1ULL << 63;
+  static const uint64_t DIRTY = 1ULL << 62;
+
+  virtual uint64_t* check_tag(uint64_t addr);
+  virtual uint64_t victimize(uint64_t addr);
+  virtual size_t LRU(size_t idx);
+  virtual size_t MRU(size_t idx);
+  virtual size_t LFU(size_t idx);
+  virtual size_t FIFO(size_t idx);
+
+  lfsr_t lfsr;
+  cache_sim_t* miss_handler;
+
+  size_t sets;
+  size_t ways;
+  size_t linesz;
+  size_t idx_shift;
+
+  uint64_t* tags;
+
+  uint64_t read_accesses;
+  uint64_t read_misses;
+  uint64_t bytes_read;
+  uint64_t write_accesses;
+  uint64_t write_misses;
+  uint64_t bytes_written;
+  uint64_t writebacks;
+
+  size_t **count;
+
+
+  std::string name;
+  bool log;
+
+  void init();
+};
+
+class fa_cache_sim_t : public cache_sim_t
+{
+ public:
+  fa_cache_sim_t(size_t ways, size_t linesz, const char* name);
+  uint64_t* check_tag(uint64_t addr);
+  uint64_t victimize(uint64_t addr);
+ private:
+  static bool cmp(uint64_t a, uint64_t b);
+  std::map<uint64_t, uint64_t> tags;
+};
+
+class cache_memtracer_t : public memtracer_t
+{
+ public:
+  cache_memtracer_t(const char* config, const char* name)
+  {
+    cache = cache_sim_t::construct(config, name);
+  }
+  ~cache_memtracer_t()
+  {
+    delete cache;
+  }
+  void set_miss_handler(cache_sim_t* mh)
+  {
+    cache->set_miss_handler(mh);
+  }
+  void set_log(bool log)
+  {
+    cache->set_log(log);
+  }
+
+ protected:
+  cache_sim_t* cache;
+};
+
+class icache_sim_t : public cache_memtracer_t
+{
+ public:
+  icache_sim_t(const char* config) : cache_memtracer_t(config, "I$") {}
+  bool interested_in_range(uint64_t begin, uint64_t end, access_type type)
+  {
+    return type == FETCH;
+  }
+  void trace(uint64_t addr, size_t bytes, access_type type)
+  {
+    if (type == FETCH) cache->access(addr, bytes, false);
+  }
+};
+
+class dcache_sim_t : public cache_memtracer_t
+{
+ public:
+  dcache_sim_t(const char* config) : cache_memtracer_t(config, "D$") {}
+  bool interested_in_range(uint64_t begin, uint64_t end, access_type type)
+  {
+    return type == LOAD || type == STORE;
+  }
+  void trace(uint64_t addr, size_t bytes, access_type type)
+  {
+    if (type == LOAD || type == STORE) cache->access(addr, bytes, type == STORE);
+  }
+};
+
+#endif

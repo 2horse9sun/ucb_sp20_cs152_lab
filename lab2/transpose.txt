@@ -1,0 +1,68 @@
+#include "dataset.h"
+#include "hpm.h"
+
+#define VERIFY
+
+void transpose(mat_nxm_t dst, const mat_mxn_t src)
+{
+    size_t i, j, k, l, blocksize1;
+    blocksize1 = 8;
+    for (i = 0; i < MAT_M; i += blocksize1) {
+        for (j = 0; j < MAT_N; j += blocksize1) {
+            for(k = i; k < min(i + blocksize1,MAT_M); ++k){
+                for(l = j; l < min(j + blocksize1,MAT_N); ++l){
+                    dst[l][k] = src[k][l];
+                }
+            }
+            
+        }
+    }
+}
+
+void transpose(mat_nxm_t dst, const mat_mxn_t src)
+{
+    size_t i, j, k, l, m, n, blocksize1, blocksize2;
+    blocksize1 = 64;
+    blocksize2 = 4;
+    for (i = 0; i < MAT_M; i += blocksize1) {
+        for (j = 0; j < MAT_N; j += blocksize1) {
+            for(k = i; k < min(i + blocksize1,MAT_M); k += blocksize2){
+                for(l = j; l < min(j + blocksize1,MAT_N); l += blocksize2){
+                    for(m = k;m < min(k + blocksize2,MAT_M);++m){
+                        for(n = l;n < min(l + blocksize2,MAT_N);++n){
+                            dst[n][m] = src[m][n];
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+int main(void)
+{
+    size_t i, j;
+
+    /* Enable performance counters */
+    hpm_init();
+
+    transpose(test_dst, test_src);
+
+    /* Print performance counter data */
+    hpm_print();
+
+#ifdef VERIFY
+    /* Verify result */
+    for (i = 0; i < MAT_M; i++) {
+        for  (j = 0; j < MAT_N; j++) {
+            if (test_dst[j][i] != test_src[i][j]) {
+                return 1;
+            }
+        }
+    }
+#endif
+
+    return 0;
+}

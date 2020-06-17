@@ -1,0 +1,721 @@
+Instantiated DTM.
+Cyc=          0 [0] PCReg=[80000000] uPC=[07] Bus=[80000000] RegSel=[0] RegAddr=[32] A=[0000aaaa] B=[0000bbbb] MA=[0000eeee] InstReg=[00000000]     c.addi4spn s0, sp, 0
+Cyc=          1 [0] PCReg=[80000000] uPC=[00] Bus=[80000000] RegSel=[0] RegAddr=[32] A=[0000aaaa] B=[0000bbbb] MA=[0000eeee] InstReg=[00000000] F   c.addi4spn s0, sp, 0
+Cyc=          2 [0] PCReg=[80000000] uPC=[01] Bus=[04c0006f] RegSel=[7] RegAddr=[ 0] A=[80000000] B=[0000bbbb] MA=[80000000] InstReg=[00000000]  M  c.addi4spn s0, sp, 0
+Cyc=          3 [0] PCReg=[80000000] uPC=[02] Bus=[80000004] RegSel=[0] RegAddr=[32] A=[80000000] B=[0000bbbb] MA=[80000000] InstReg=[04c0006f]     j       pc + 0x4c
+Cyc=          4 [0] PCReg=[80000004] uPC=[6a] Bus=[80000004] RegSel=[0] RegAddr=[32] A=[80000000] B=[0000bbbb] MA=[80000000] InstReg=[04c0006f]     j       pc + 0x4c
+Cyc=          5 [0] PCReg=[80000004] uPC=[6b] Bus=[80000004] RegSel=[1] RegAddr=[ 0] A=[80000004] B=[0000bbbb] MA=[80000000] InstReg=[04c0006f]     j       pc + 0x4c
+Cyc=          6 [0] PCReg=[80000004] uPC=[6c] Bus=[80000000] RegSel=[7] RegAddr=[ 0] A=[80000004] B=[0000bbbb] MA=[80000000] InstReg=[04c0006f]     j       pc + 0x4c
+Cyc=          7 [0] PCReg=[80000004] uPC=[6d] Bus=[0000004c] RegSel=[7] RegAddr=[ 0] A=[80000000] B=[0000bbbb] MA=[80000000] InstReg=[04c0006f]     j       pc + 0x4c
+Cyc=          8 [0] PCReg=[80000004] uPC=[6e] Bus=[8000004c] RegSel=[0] RegAddr=[32] A=[80000000] B=[0000004c] MA=[80000000] InstReg=[04c0006f]     j       pc + 0x4c
+Cyc=          9 [1] PCReg=[8000004c] uPC=[00] Bus=[8000004c] RegSel=[0] RegAddr=[32] A=[80000000] B=[0000004c] MA=[80000000] InstReg=[04c0006f] F   j       pc + 0x4c
+Cyc=         10 [0] PCReg=[8000004c] uPC=[01] Bus=[f1402573] RegSel=[7] RegAddr=[ 0] A=[8000004c] B=[0000004c] MA=[8000004c] InstReg=[04c0006f]  M  j       pc + 0x4c
+Cyc=         11 [0] PCReg=[8000004c] uPC=[02] Bus=[80000050] RegSel=[0] RegAddr=[32] A=[8000004c] B=[0000004c] MA=[8000004c] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=         12 [0] PCReg=[80000050] uPC=[a3] Bus=[ffffff14] RegSel=[5] RegAddr=[ 0] A=[8000004c] B=[0000004c] MA=[8000004c] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=         13 [0] PCReg=[80000050] uPC=[a4] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[8000004c] B=[0000004c] MA=[8000004c] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=         14 [0] PCReg=[80000050] uPC=[a5] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[0000004c] MA=[8000004c] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=         15 [0] PCReg=[80000050] uPC=[a6] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[0000004c] MA=[8000004c] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=         16 [0] PCReg=[80000050] uPC=[a7] Bus=[00000000] RegSel=[1] RegAddr=[10] A=[00000000] B=[0000004c] MA=[8000004c] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=         17 [1] PCReg=[80000050] uPC=[00] Bus=[80000050] RegSel=[0] RegAddr=[32] A=[00000000] B=[0000004c] MA=[8000004c] InstReg=[f1402573] F   csrr    a0, mhartid
+Cyc=         18 [0] PCReg=[80000050] uPC=[01] Bus=[00051063] RegSel=[7] RegAddr=[ 0] A=[80000050] B=[0000004c] MA=[80000050] InstReg=[f1402573]  M  csrr    a0, mhartid
+Cyc=         19 [0] PCReg=[80000050] uPC=[02] Bus=[80000054] RegSel=[0] RegAddr=[32] A=[80000050] B=[0000004c] MA=[80000050] InstReg=[00051063]     bnez    a0, pc + 0
+Cyc=         20 [0] PCReg=[80000054] uPC=[7c] Bus=[00000000] RegSel=[2] RegAddr=[10] A=[80000050] B=[0000004c] MA=[80000050] InstReg=[00051063]     bnez    a0, pc + 0
+Cyc=         21 [0] PCReg=[80000054] uPC=[7d] Bus=[00000000] RegSel=[3] RegAddr=[ 0] A=[00000000] B=[0000004c] MA=[80000050] InstReg=[00051063]     bnez    a0, pc + 0
+Cyc=         22 [0] PCReg=[80000054] uPC=[7e] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[80000050] InstReg=[00051063]     bnez    a0, pc + 0
+Cyc=         23 [0] PCReg=[80000054] uPC=[7f] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[80000050] InstReg=[00051063]     bnez    a0, pc + 0
+Cyc=         24 [1] PCReg=[80000054] uPC=[00] Bus=[80000054] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000000] MA=[80000050] InstReg=[00051063] F   bnez    a0, pc + 0
+Cyc=         25 [0] PCReg=[80000054] uPC=[01] Bus=[00000297] RegSel=[7] RegAddr=[ 0] A=[80000054] B=[00000000] MA=[80000054] InstReg=[00051063]  M  bnez    a0, pc + 0
+Cyc=         26 [0] PCReg=[80000054] uPC=[02] Bus=[80000058] RegSel=[0] RegAddr=[32] A=[80000054] B=[00000000] MA=[80000054] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=         27 [0] PCReg=[80000058] uPC=[74] Bus=[80000058] RegSel=[0] RegAddr=[32] A=[80000054] B=[00000000] MA=[80000054] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=         28 [0] PCReg=[80000058] uPC=[75] Bus=[80000054] RegSel=[7] RegAddr=[ 0] A=[80000058] B=[00000000] MA=[80000054] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=         29 [0] PCReg=[80000058] uPC=[76] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[80000054] B=[00000000] MA=[80000054] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=         30 [0] PCReg=[80000058] uPC=[77] Bus=[80000054] RegSel=[1] RegAddr=[ 5] A=[80000054] B=[00000000] MA=[80000054] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=         31 [1] PCReg=[80000058] uPC=[00] Bus=[80000058] RegSel=[0] RegAddr=[32] A=[80000054] B=[00000000] MA=[80000054] InstReg=[00000297] F   auipc   t0, 0x0
+Cyc=         32 [0] PCReg=[80000058] uPC=[01] Bus=[01028293] RegSel=[7] RegAddr=[ 0] A=[80000058] B=[00000000] MA=[80000058] InstReg=[00000297]  M  auipc   t0, 0x0
+Cyc=         33 [0] PCReg=[80000058] uPC=[02] Bus=[8000005c] RegSel=[0] RegAddr=[32] A=[80000058] B=[00000000] MA=[80000058] InstReg=[01028293]     addi    t0, t0, 16
+Cyc=         34 [0] PCReg=[8000005c] uPC=[31] Bus=[80000054] RegSel=[2] RegAddr=[ 5] A=[80000058] B=[00000000] MA=[80000058] InstReg=[01028293]     addi    t0, t0, 16
+Cyc=         35 [0] PCReg=[8000005c] uPC=[32] Bus=[00000010] RegSel=[7] RegAddr=[ 0] A=[80000054] B=[00000000] MA=[80000058] InstReg=[01028293]     addi    t0, t0, 16
+Cyc=         36 [0] PCReg=[8000005c] uPC=[33] Bus=[80000064] RegSel=[1] RegAddr=[ 5] A=[80000054] B=[00000010] MA=[80000058] InstReg=[01028293]     addi    t0, t0, 16
+Cyc=         37 [1] PCReg=[8000005c] uPC=[00] Bus=[8000005c] RegSel=[0] RegAddr=[32] A=[80000054] B=[00000010] MA=[80000058] InstReg=[01028293] F   addi    t0, t0, 16
+Cyc=         38 [0] PCReg=[8000005c] uPC=[01] Bus=[30529073] RegSel=[7] RegAddr=[ 0] A=[8000005c] B=[00000010] MA=[8000005c] InstReg=[01028293]  M  addi    t0, t0, 16
+Cyc=         39 [0] PCReg=[8000005c] uPC=[02] Bus=[80000060] RegSel=[0] RegAddr=[32] A=[8000005c] B=[00000010] MA=[8000005c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         40 [0] PCReg=[80000060] uPC=[99] Bus=[00000305] RegSel=[5] RegAddr=[ 0] A=[8000005c] B=[00000010] MA=[8000005c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         41 [0] PCReg=[80000060] uPC=[9a] Bus=[80000064] RegSel=[2] RegAddr=[ 5] A=[8000005c] B=[00000010] MA=[8000005c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         42 [0] PCReg=[80000060] uPC=[9b] Bus=[80000064] RegSel=[6] RegAddr=[ 0] A=[80000064] B=[00000010] MA=[8000005c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         43 [0] PCReg=[80000060] uPC=[9c] Bus=[00000100] RegSel=[6] RegAddr=[ 0] A=[80000064] B=[00000010] MA=[8000005c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         44 [0] PCReg=[80000060] uPC=[9d] Bus=[00000100] RegSel=[1] RegAddr=[ 0] A=[00000100] B=[00000010] MA=[8000005c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         45 [1] PCReg=[80000060] uPC=[00] Bus=[80000060] RegSel=[0] RegAddr=[32] A=[00000100] B=[00000010] MA=[8000005c] InstReg=[30529073] F   csrw    mtvec, t0
+Cyc=         46 [0] PCReg=[80000060] uPC=[01] Bus=[18005073] RegSel=[7] RegAddr=[ 0] A=[80000060] B=[00000010] MA=[80000060] InstReg=[30529073]  M  csrw    mtvec, t0
+Cyc=         47 [0] PCReg=[80000060] uPC=[02] Bus=[80000064] RegSel=[0] RegAddr=[32] A=[80000060] B=[00000010] MA=[80000060] InstReg=[18005073]     csrwi   satp, 0
+Cyc=         48 [0] PCReg=[80000064] uPC=[a8] Bus=[00000180] RegSel=[5] RegAddr=[ 0] A=[80000060] B=[00000010] MA=[80000060] InstReg=[18005073]     csrwi   satp, 0
+Cyc=         49 [0] PCReg=[80000064] uPC=[a9] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[80000060] B=[00000010] MA=[80000060] InstReg=[18005073]     csrwi   satp, 0
+Cyc=         50 [0] PCReg=[80000064] uPC=[aa] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000010] MA=[80000060] InstReg=[18005073]     csrwi   satp, 0
+Cyc=         51 [0] PCReg=[80000064] uPC=[ab] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000010] MA=[80000060] InstReg=[18005073]     csrwi   satp, 0
+Cyc=         52 [0] PCReg=[80000064] uPC=[ac] Bus=[00000000] RegSel=[1] RegAddr=[ 0] A=[00000000] B=[00000010] MA=[80000060] InstReg=[18005073]     csrwi   satp, 0
+Cyc=         53 [1] PCReg=[80000064] uPC=[00] Bus=[80000064] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000010] MA=[80000060] InstReg=[18005073] F   csrwi   satp, 0
+Cyc=         54 [0] PCReg=[80000064] uPC=[01] Bus=[00000297] RegSel=[7] RegAddr=[ 0] A=[80000064] B=[00000010] MA=[80000064] InstReg=[18005073]  M  csrwi   satp, 0
+Cyc=         55 [0] PCReg=[80000064] uPC=[02] Bus=[80000068] RegSel=[0] RegAddr=[32] A=[80000064] B=[00000010] MA=[80000064] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=         56 [0] PCReg=[80000068] uPC=[74] Bus=[80000068] RegSel=[0] RegAddr=[32] A=[80000064] B=[00000010] MA=[80000064] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=         57 [0] PCReg=[80000068] uPC=[75] Bus=[80000064] RegSel=[7] RegAddr=[ 0] A=[80000068] B=[00000010] MA=[80000064] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=         58 [0] PCReg=[80000068] uPC=[76] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[80000064] B=[00000010] MA=[80000064] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=         59 [0] PCReg=[80000068] uPC=[77] Bus=[80000064] RegSel=[1] RegAddr=[ 5] A=[80000064] B=[00000000] MA=[80000064] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=         60 [1] PCReg=[80000068] uPC=[00] Bus=[80000068] RegSel=[0] RegAddr=[32] A=[80000064] B=[00000000] MA=[80000064] InstReg=[00000297] F   auipc   t0, 0x0
+Cyc=         61 [0] PCReg=[80000068] uPC=[01] Bus=[02028293] RegSel=[7] RegAddr=[ 0] A=[80000068] B=[00000000] MA=[80000068] InstReg=[00000297]  M  auipc   t0, 0x0
+Cyc=         62 [0] PCReg=[80000068] uPC=[02] Bus=[8000006c] RegSel=[0] RegAddr=[32] A=[80000068] B=[00000000] MA=[80000068] InstReg=[02028293]     addi    t0, t0, 32
+Cyc=         63 [0] PCReg=[8000006c] uPC=[31] Bus=[80000064] RegSel=[2] RegAddr=[ 5] A=[80000068] B=[00000000] MA=[80000068] InstReg=[02028293]     addi    t0, t0, 32
+Cyc=         64 [0] PCReg=[8000006c] uPC=[32] Bus=[00000020] RegSel=[7] RegAddr=[ 0] A=[80000064] B=[00000000] MA=[80000068] InstReg=[02028293]     addi    t0, t0, 32
+Cyc=         65 [0] PCReg=[8000006c] uPC=[33] Bus=[80000084] RegSel=[1] RegAddr=[ 5] A=[80000064] B=[00000020] MA=[80000068] InstReg=[02028293]     addi    t0, t0, 32
+Cyc=         66 [1] PCReg=[8000006c] uPC=[00] Bus=[8000006c] RegSel=[0] RegAddr=[32] A=[80000064] B=[00000020] MA=[80000068] InstReg=[02028293] F   addi    t0, t0, 32
+Cyc=         67 [0] PCReg=[8000006c] uPC=[01] Bus=[30529073] RegSel=[7] RegAddr=[ 0] A=[8000006c] B=[00000020] MA=[8000006c] InstReg=[02028293]  M  addi    t0, t0, 32
+Cyc=         68 [0] PCReg=[8000006c] uPC=[02] Bus=[80000070] RegSel=[0] RegAddr=[32] A=[8000006c] B=[00000020] MA=[8000006c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         69 [0] PCReg=[80000070] uPC=[99] Bus=[00000305] RegSel=[5] RegAddr=[ 0] A=[8000006c] B=[00000020] MA=[8000006c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         70 [0] PCReg=[80000070] uPC=[9a] Bus=[80000084] RegSel=[2] RegAddr=[ 5] A=[8000006c] B=[00000020] MA=[8000006c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         71 [0] PCReg=[80000070] uPC=[9b] Bus=[80000084] RegSel=[6] RegAddr=[ 0] A=[80000084] B=[00000020] MA=[8000006c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         72 [0] PCReg=[80000070] uPC=[9c] Bus=[00000100] RegSel=[6] RegAddr=[ 0] A=[80000084] B=[00000020] MA=[8000006c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         73 [0] PCReg=[80000070] uPC=[9d] Bus=[00000100] RegSel=[1] RegAddr=[ 0] A=[00000100] B=[00000020] MA=[8000006c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=         74 [1] PCReg=[80000070] uPC=[00] Bus=[80000070] RegSel=[0] RegAddr=[32] A=[00000100] B=[00000020] MA=[8000006c] InstReg=[30529073] F   csrw    mtvec, t0
+Cyc=         75 [0] PCReg=[80000070] uPC=[01] Bus=[800002b7] RegSel=[7] RegAddr=[ 0] A=[80000070] B=[00000020] MA=[80000070] InstReg=[30529073]  M  csrw    mtvec, t0
+Cyc=         76 [0] PCReg=[80000070] uPC=[02] Bus=[80000074] RegSel=[0] RegAddr=[32] A=[80000070] B=[00000020] MA=[80000070] InstReg=[800002b7]     lui     t0, 0x80000
+Cyc=         77 [0] PCReg=[80000074] uPC=[30] Bus=[80000000] RegSel=[1] RegAddr=[ 5] A=[80000070] B=[00000020] MA=[80000070] InstReg=[800002b7]     lui     t0, 0x80000
+Cyc=         78 [1] PCReg=[80000074] uPC=[00] Bus=[80000074] RegSel=[0] RegAddr=[32] A=[80000070] B=[00000020] MA=[80000070] InstReg=[800002b7] F   lui     t0, 0x80000
+Cyc=         79 [0] PCReg=[80000074] uPC=[01] Bus=[fff28293] RegSel=[7] RegAddr=[ 0] A=[80000074] B=[00000020] MA=[80000074] InstReg=[800002b7]  M  lui     t0, 0x80000
+Cyc=         80 [0] PCReg=[80000074] uPC=[02] Bus=[80000078] RegSel=[0] RegAddr=[32] A=[80000074] B=[00000020] MA=[80000074] InstReg=[fff28293]     addi    t0, t0, -1
+Cyc=         81 [0] PCReg=[80000078] uPC=[31] Bus=[80000000] RegSel=[2] RegAddr=[ 5] A=[80000074] B=[00000020] MA=[80000074] InstReg=[fff28293]     addi    t0, t0, -1
+Cyc=         82 [0] PCReg=[80000078] uPC=[32] Bus=[ffffffff] RegSel=[7] RegAddr=[ 0] A=[80000000] B=[00000020] MA=[80000074] InstReg=[fff28293]     addi    t0, t0, -1
+Cyc=         83 [0] PCReg=[80000078] uPC=[33] Bus=[7fffffff] RegSel=[1] RegAddr=[ 5] A=[80000000] B=[ffffffff] MA=[80000074] InstReg=[fff28293]     addi    t0, t0, -1
+Cyc=         84 [1] PCReg=[80000078] uPC=[00] Bus=[80000078] RegSel=[0] RegAddr=[32] A=[80000000] B=[ffffffff] MA=[80000074] InstReg=[fff28293] F   addi    t0, t0, -1
+Cyc=         85 [0] PCReg=[80000078] uPC=[01] Bus=[3b029073] RegSel=[7] RegAddr=[ 0] A=[80000078] B=[ffffffff] MA=[80000078] InstReg=[fff28293]  M  addi    t0, t0, -1
+Cyc=         86 [0] PCReg=[80000078] uPC=[02] Bus=[8000007c] RegSel=[0] RegAddr=[32] A=[80000078] B=[ffffffff] MA=[80000078] InstReg=[3b029073]     csrw    pmpaddr0, t0
+Cyc=         87 [0] PCReg=[8000007c] uPC=[99] Bus=[000003b0] RegSel=[5] RegAddr=[ 0] A=[80000078] B=[ffffffff] MA=[80000078] InstReg=[3b029073]     csrw    pmpaddr0, t0
+Cyc=         88 [0] PCReg=[8000007c] uPC=[9a] Bus=[7fffffff] RegSel=[2] RegAddr=[ 5] A=[80000078] B=[ffffffff] MA=[80000078] InstReg=[3b029073]     csrw    pmpaddr0, t0
+Cyc=         89 [0] PCReg=[8000007c] uPC=[9b] Bus=[7fffffff] RegSel=[6] RegAddr=[ 0] A=[7fffffff] B=[ffffffff] MA=[80000078] InstReg=[3b029073]     csrw    pmpaddr0, t0
+Cyc=         90 [0] PCReg=[8000007c] uPC=[9c] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[7fffffff] B=[ffffffff] MA=[80000078] InstReg=[3b029073]     csrw    pmpaddr0, t0
+Cyc=         91 [0] PCReg=[8000007c] uPC=[9d] Bus=[00000000] RegSel=[1] RegAddr=[ 0] A=[00000000] B=[ffffffff] MA=[80000078] InstReg=[3b029073]     csrw    pmpaddr0, t0
+Cyc=         92 [1] PCReg=[8000007c] uPC=[00] Bus=[8000007c] RegSel=[0] RegAddr=[32] A=[00000000] B=[ffffffff] MA=[80000078] InstReg=[3b029073] F   csrw    pmpaddr0, t0
+Cyc=         93 [0] PCReg=[8000007c] uPC=[01] Bus=[01f00293] RegSel=[7] RegAddr=[ 0] A=[8000007c] B=[ffffffff] MA=[8000007c] InstReg=[3b029073]  M  csrw    pmpaddr0, t0
+Cyc=         94 [0] PCReg=[8000007c] uPC=[02] Bus=[80000080] RegSel=[0] RegAddr=[32] A=[8000007c] B=[ffffffff] MA=[8000007c] InstReg=[01f00293]     li      t0, 31
+Cyc=         95 [0] PCReg=[80000080] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[8000007c] B=[ffffffff] MA=[8000007c] InstReg=[01f00293]     li      t0, 31
+Cyc=         96 [0] PCReg=[80000080] uPC=[32] Bus=[0000001f] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[ffffffff] MA=[8000007c] InstReg=[01f00293]     li      t0, 31
+Cyc=         97 [0] PCReg=[80000080] uPC=[33] Bus=[0000001f] RegSel=[1] RegAddr=[ 5] A=[00000000] B=[0000001f] MA=[8000007c] InstReg=[01f00293]     li      t0, 31
+Cyc=         98 [1] PCReg=[80000080] uPC=[00] Bus=[80000080] RegSel=[0] RegAddr=[32] A=[00000000] B=[0000001f] MA=[8000007c] InstReg=[01f00293] F   li      t0, 31
+Cyc=         99 [0] PCReg=[80000080] uPC=[01] Bus=[3a029073] RegSel=[7] RegAddr=[ 0] A=[80000080] B=[0000001f] MA=[80000080] InstReg=[01f00293]  M  li      t0, 31
+Cyc=        100 [0] PCReg=[80000080] uPC=[02] Bus=[80000084] RegSel=[0] RegAddr=[32] A=[80000080] B=[0000001f] MA=[80000080] InstReg=[3a029073]     csrw    pmpcfg0, t0
+Cyc=        101 [0] PCReg=[80000084] uPC=[99] Bus=[000003a0] RegSel=[5] RegAddr=[ 0] A=[80000080] B=[0000001f] MA=[80000080] InstReg=[3a029073]     csrw    pmpcfg0, t0
+Cyc=        102 [0] PCReg=[80000084] uPC=[9a] Bus=[0000001f] RegSel=[2] RegAddr=[ 5] A=[80000080] B=[0000001f] MA=[80000080] InstReg=[3a029073]     csrw    pmpcfg0, t0
+Cyc=        103 [0] PCReg=[80000084] uPC=[9b] Bus=[0000001f] RegSel=[6] RegAddr=[ 0] A=[0000001f] B=[0000001f] MA=[80000080] InstReg=[3a029073]     csrw    pmpcfg0, t0
+Cyc=        104 [0] PCReg=[80000084] uPC=[9c] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[0000001f] B=[0000001f] MA=[80000080] InstReg=[3a029073]     csrw    pmpcfg0, t0
+Cyc=        105 [0] PCReg=[80000084] uPC=[9d] Bus=[00000000] RegSel=[1] RegAddr=[ 0] A=[00000000] B=[0000001f] MA=[80000080] InstReg=[3a029073]     csrw    pmpcfg0, t0
+Cyc=        106 [1] PCReg=[80000084] uPC=[00] Bus=[80000084] RegSel=[0] RegAddr=[32] A=[00000000] B=[0000001f] MA=[80000080] InstReg=[3a029073] F   csrw    pmpcfg0, t0
+Cyc=        107 [0] PCReg=[80000084] uPC=[01] Bus=[00000297] RegSel=[7] RegAddr=[ 0] A=[80000084] B=[0000001f] MA=[80000084] InstReg=[3a029073]  M  csrw    pmpcfg0, t0
+Cyc=        108 [0] PCReg=[80000084] uPC=[02] Bus=[80000088] RegSel=[0] RegAddr=[32] A=[80000084] B=[0000001f] MA=[80000084] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        109 [0] PCReg=[80000088] uPC=[74] Bus=[80000088] RegSel=[0] RegAddr=[32] A=[80000084] B=[0000001f] MA=[80000084] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        110 [0] PCReg=[80000088] uPC=[75] Bus=[80000084] RegSel=[7] RegAddr=[ 0] A=[80000088] B=[0000001f] MA=[80000084] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        111 [0] PCReg=[80000088] uPC=[76] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[80000084] B=[0000001f] MA=[80000084] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        112 [0] PCReg=[80000088] uPC=[77] Bus=[80000084] RegSel=[1] RegAddr=[ 5] A=[80000084] B=[00000000] MA=[80000084] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        113 [1] PCReg=[80000088] uPC=[00] Bus=[80000088] RegSel=[0] RegAddr=[32] A=[80000084] B=[00000000] MA=[80000084] InstReg=[00000297] F   auipc   t0, 0x0
+Cyc=        114 [0] PCReg=[80000088] uPC=[01] Bus=[01828293] RegSel=[7] RegAddr=[ 0] A=[80000088] B=[00000000] MA=[80000088] InstReg=[00000297]  M  auipc   t0, 0x0
+Cyc=        115 [0] PCReg=[80000088] uPC=[02] Bus=[8000008c] RegSel=[0] RegAddr=[32] A=[80000088] B=[00000000] MA=[80000088] InstReg=[01828293]     addi    t0, t0, 24
+Cyc=        116 [0] PCReg=[8000008c] uPC=[31] Bus=[80000084] RegSel=[2] RegAddr=[ 5] A=[80000088] B=[00000000] MA=[80000088] InstReg=[01828293]     addi    t0, t0, 24
+Cyc=        117 [0] PCReg=[8000008c] uPC=[32] Bus=[00000018] RegSel=[7] RegAddr=[ 0] A=[80000084] B=[00000000] MA=[80000088] InstReg=[01828293]     addi    t0, t0, 24
+Cyc=        118 [0] PCReg=[8000008c] uPC=[33] Bus=[8000009c] RegSel=[1] RegAddr=[ 5] A=[80000084] B=[00000018] MA=[80000088] InstReg=[01828293]     addi    t0, t0, 24
+Cyc=        119 [1] PCReg=[8000008c] uPC=[00] Bus=[8000008c] RegSel=[0] RegAddr=[32] A=[80000084] B=[00000018] MA=[80000088] InstReg=[01828293] F   addi    t0, t0, 24
+Cyc=        120 [0] PCReg=[8000008c] uPC=[01] Bus=[30529073] RegSel=[7] RegAddr=[ 0] A=[8000008c] B=[00000018] MA=[8000008c] InstReg=[01828293]  M  addi    t0, t0, 24
+Cyc=        121 [0] PCReg=[8000008c] uPC=[02] Bus=[80000090] RegSel=[0] RegAddr=[32] A=[8000008c] B=[00000018] MA=[8000008c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        122 [0] PCReg=[80000090] uPC=[99] Bus=[00000305] RegSel=[5] RegAddr=[ 0] A=[8000008c] B=[00000018] MA=[8000008c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        123 [0] PCReg=[80000090] uPC=[9a] Bus=[8000009c] RegSel=[2] RegAddr=[ 5] A=[8000008c] B=[00000018] MA=[8000008c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        124 [0] PCReg=[80000090] uPC=[9b] Bus=[8000009c] RegSel=[6] RegAddr=[ 0] A=[8000009c] B=[00000018] MA=[8000008c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        125 [0] PCReg=[80000090] uPC=[9c] Bus=[00000100] RegSel=[6] RegAddr=[ 0] A=[8000009c] B=[00000018] MA=[8000008c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        126 [0] PCReg=[80000090] uPC=[9d] Bus=[00000100] RegSel=[1] RegAddr=[ 0] A=[00000100] B=[00000018] MA=[8000008c] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        127 [1] PCReg=[80000090] uPC=[00] Bus=[80000090] RegSel=[0] RegAddr=[32] A=[00000100] B=[00000018] MA=[8000008c] InstReg=[30529073] F   csrw    mtvec, t0
+Cyc=        128 [0] PCReg=[80000090] uPC=[01] Bus=[30205073] RegSel=[7] RegAddr=[ 0] A=[80000090] B=[00000018] MA=[80000090] InstReg=[30529073]  M  csrw    mtvec, t0
+Cyc=        129 [0] PCReg=[80000090] uPC=[02] Bus=[80000094] RegSel=[0] RegAddr=[32] A=[80000090] B=[00000018] MA=[80000090] InstReg=[30205073]     csrwi   medeleg, 0
+Cyc=        130 [0] PCReg=[80000094] uPC=[a8] Bus=[00000302] RegSel=[5] RegAddr=[ 0] A=[80000090] B=[00000018] MA=[80000090] InstReg=[30205073]     csrwi   medeleg, 0
+Cyc=        131 [0] PCReg=[80000094] uPC=[a9] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[80000090] B=[00000018] MA=[80000090] InstReg=[30205073]     csrwi   medeleg, 0
+Cyc=        132 [0] PCReg=[80000094] uPC=[aa] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000018] MA=[80000090] InstReg=[30205073]     csrwi   medeleg, 0
+Cyc=        133 [0] PCReg=[80000094] uPC=[ab] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000018] MA=[80000090] InstReg=[30205073]     csrwi   medeleg, 0
+Cyc=        134 [0] PCReg=[80000094] uPC=[ac] Bus=[00000000] RegSel=[1] RegAddr=[ 0] A=[00000000] B=[00000018] MA=[80000090] InstReg=[30205073]     csrwi   medeleg, 0
+Cyc=        135 [1] PCReg=[80000094] uPC=[00] Bus=[80000094] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000018] MA=[80000090] InstReg=[30205073] F   csrwi   medeleg, 0
+Cyc=        136 [0] PCReg=[80000094] uPC=[01] Bus=[30305073] RegSel=[7] RegAddr=[ 0] A=[80000094] B=[00000018] MA=[80000094] InstReg=[30205073]  M  csrwi   medeleg, 0
+Cyc=        137 [0] PCReg=[80000094] uPC=[02] Bus=[80000098] RegSel=[0] RegAddr=[32] A=[80000094] B=[00000018] MA=[80000094] InstReg=[30305073]     csrwi   mideleg, 0
+Cyc=        138 [0] PCReg=[80000098] uPC=[a8] Bus=[00000303] RegSel=[5] RegAddr=[ 0] A=[80000094] B=[00000018] MA=[80000094] InstReg=[30305073]     csrwi   mideleg, 0
+Cyc=        139 [0] PCReg=[80000098] uPC=[a9] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[80000094] B=[00000018] MA=[80000094] InstReg=[30305073]     csrwi   mideleg, 0
+Cyc=        140 [0] PCReg=[80000098] uPC=[aa] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000018] MA=[80000094] InstReg=[30305073]     csrwi   mideleg, 0
+Cyc=        141 [0] PCReg=[80000098] uPC=[ab] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000018] MA=[80000094] InstReg=[30305073]     csrwi   mideleg, 0
+Cyc=        142 [0] PCReg=[80000098] uPC=[ac] Bus=[00000000] RegSel=[1] RegAddr=[ 0] A=[00000000] B=[00000018] MA=[80000094] InstReg=[30305073]     csrwi   mideleg, 0
+Cyc=        143 [1] PCReg=[80000098] uPC=[00] Bus=[80000098] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000018] MA=[80000094] InstReg=[30305073] F   csrwi   mideleg, 0
+Cyc=        144 [0] PCReg=[80000098] uPC=[01] Bus=[30405073] RegSel=[7] RegAddr=[ 0] A=[80000098] B=[00000018] MA=[80000098] InstReg=[30305073]  M  csrwi   mideleg, 0
+Cyc=        145 [0] PCReg=[80000098] uPC=[02] Bus=[8000009c] RegSel=[0] RegAddr=[32] A=[80000098] B=[00000018] MA=[80000098] InstReg=[30405073]     csrwi   mie, 0
+Cyc=        146 [0] PCReg=[8000009c] uPC=[a8] Bus=[00000304] RegSel=[5] RegAddr=[ 0] A=[80000098] B=[00000018] MA=[80000098] InstReg=[30405073]     csrwi   mie, 0
+Cyc=        147 [0] PCReg=[8000009c] uPC=[a9] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[80000098] B=[00000018] MA=[80000098] InstReg=[30405073]     csrwi   mie, 0
+Cyc=        148 [0] PCReg=[8000009c] uPC=[aa] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000018] MA=[80000098] InstReg=[30405073]     csrwi   mie, 0
+Cyc=        149 [0] PCReg=[8000009c] uPC=[ab] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000018] MA=[80000098] InstReg=[30405073]     csrwi   mie, 0
+Cyc=        150 [0] PCReg=[8000009c] uPC=[ac] Bus=[00000000] RegSel=[1] RegAddr=[ 0] A=[00000000] B=[00000018] MA=[80000098] InstReg=[30405073]     csrwi   mie, 0
+Cyc=        151 [1] PCReg=[8000009c] uPC=[00] Bus=[8000009c] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000018] MA=[80000098] InstReg=[30405073] F   csrwi   mie, 0
+Cyc=        152 [0] PCReg=[8000009c] uPC=[01] Bus=[00000193] RegSel=[7] RegAddr=[ 0] A=[8000009c] B=[00000018] MA=[8000009c] InstReg=[30405073]  M  csrwi   mie, 0
+Cyc=        153 [0] PCReg=[8000009c] uPC=[02] Bus=[800000a0] RegSel=[0] RegAddr=[32] A=[8000009c] B=[00000018] MA=[8000009c] InstReg=[00000193]     li      gp, 0
+Cyc=        154 [0] PCReg=[800000a0] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[8000009c] B=[00000018] MA=[8000009c] InstReg=[00000193]     li      gp, 0
+Cyc=        155 [0] PCReg=[800000a0] uPC=[32] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000018] MA=[8000009c] InstReg=[00000193]     li      gp, 0
+Cyc=        156 [0] PCReg=[800000a0] uPC=[33] Bus=[00000000] RegSel=[1] RegAddr=[ 3] A=[00000000] B=[00000000] MA=[8000009c] InstReg=[00000193]     li      gp, 0
+Cyc=        157 [1] PCReg=[800000a0] uPC=[00] Bus=[800000a0] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000000] MA=[8000009c] InstReg=[00000193] F   li      gp, 0
+Cyc=        158 [0] PCReg=[800000a0] uPC=[01] Bus=[00000297] RegSel=[7] RegAddr=[ 0] A=[800000a0] B=[00000000] MA=[800000a0] InstReg=[00000193]  M  li      gp, 0
+Cyc=        159 [0] PCReg=[800000a0] uPC=[02] Bus=[800000a4] RegSel=[0] RegAddr=[32] A=[800000a0] B=[00000000] MA=[800000a0] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        160 [0] PCReg=[800000a4] uPC=[74] Bus=[800000a4] RegSel=[0] RegAddr=[32] A=[800000a0] B=[00000000] MA=[800000a0] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        161 [0] PCReg=[800000a4] uPC=[75] Bus=[800000a0] RegSel=[7] RegAddr=[ 0] A=[800000a4] B=[00000000] MA=[800000a0] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        162 [0] PCReg=[800000a4] uPC=[76] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[800000a0] B=[00000000] MA=[800000a0] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        163 [0] PCReg=[800000a4] uPC=[77] Bus=[800000a0] RegSel=[1] RegAddr=[ 5] A=[800000a0] B=[00000000] MA=[800000a0] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        164 [1] PCReg=[800000a4] uPC=[00] Bus=[800000a4] RegSel=[0] RegAddr=[32] A=[800000a0] B=[00000000] MA=[800000a0] InstReg=[00000297] F   auipc   t0, 0x0
+Cyc=        165 [0] PCReg=[800000a4] uPC=[01] Bus=[f6428293] RegSel=[7] RegAddr=[ 0] A=[800000a4] B=[00000000] MA=[800000a4] InstReg=[00000297]  M  auipc   t0, 0x0
+Cyc=        166 [0] PCReg=[800000a4] uPC=[02] Bus=[800000a8] RegSel=[0] RegAddr=[32] A=[800000a4] B=[00000000] MA=[800000a4] InstReg=[f6428293]     addi    t0, t0, -156
+Cyc=        167 [0] PCReg=[800000a8] uPC=[31] Bus=[800000a0] RegSel=[2] RegAddr=[ 5] A=[800000a4] B=[00000000] MA=[800000a4] InstReg=[f6428293]     addi    t0, t0, -156
+Cyc=        168 [0] PCReg=[800000a8] uPC=[32] Bus=[ffffff64] RegSel=[7] RegAddr=[ 0] A=[800000a0] B=[00000000] MA=[800000a4] InstReg=[f6428293]     addi    t0, t0, -156
+Cyc=        169 [0] PCReg=[800000a8] uPC=[33] Bus=[80000004] RegSel=[1] RegAddr=[ 5] A=[800000a0] B=[ffffff64] MA=[800000a4] InstReg=[f6428293]     addi    t0, t0, -156
+Cyc=        170 [1] PCReg=[800000a8] uPC=[00] Bus=[800000a8] RegSel=[0] RegAddr=[32] A=[800000a0] B=[ffffff64] MA=[800000a4] InstReg=[f6428293] F   addi    t0, t0, -156
+Cyc=        171 [0] PCReg=[800000a8] uPC=[01] Bus=[30529073] RegSel=[7] RegAddr=[ 0] A=[800000a8] B=[ffffff64] MA=[800000a8] InstReg=[f6428293]  M  addi    t0, t0, -156
+Cyc=        172 [0] PCReg=[800000a8] uPC=[02] Bus=[800000ac] RegSel=[0] RegAddr=[32] A=[800000a8] B=[ffffff64] MA=[800000a8] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        173 [0] PCReg=[800000ac] uPC=[99] Bus=[00000305] RegSel=[5] RegAddr=[ 0] A=[800000a8] B=[ffffff64] MA=[800000a8] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        174 [0] PCReg=[800000ac] uPC=[9a] Bus=[80000004] RegSel=[2] RegAddr=[ 5] A=[800000a8] B=[ffffff64] MA=[800000a8] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        175 [0] PCReg=[800000ac] uPC=[9b] Bus=[80000004] RegSel=[6] RegAddr=[ 0] A=[80000004] B=[ffffff64] MA=[800000a8] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        176 [0] PCReg=[800000ac] uPC=[9c] Bus=[00000100] RegSel=[6] RegAddr=[ 0] A=[80000004] B=[ffffff64] MA=[800000a8] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        177 [0] PCReg=[800000ac] uPC=[9d] Bus=[00000100] RegSel=[1] RegAddr=[ 0] A=[00000100] B=[ffffff64] MA=[800000a8] InstReg=[30529073]     csrw    mtvec, t0
+Cyc=        178 [1] PCReg=[800000ac] uPC=[00] Bus=[800000ac] RegSel=[0] RegAddr=[32] A=[00000100] B=[ffffff64] MA=[800000a8] InstReg=[30529073] F   csrw    mtvec, t0
+Cyc=        179 [0] PCReg=[800000ac] uPC=[01] Bus=[00100513] RegSel=[7] RegAddr=[ 0] A=[800000ac] B=[ffffff64] MA=[800000ac] InstReg=[30529073]  M  csrw    mtvec, t0
+Cyc=        180 [0] PCReg=[800000ac] uPC=[02] Bus=[800000b0] RegSel=[0] RegAddr=[32] A=[800000ac] B=[ffffff64] MA=[800000ac] InstReg=[00100513]     li      a0, 1
+Cyc=        181 [0] PCReg=[800000b0] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[800000ac] B=[ffffff64] MA=[800000ac] InstReg=[00100513]     li      a0, 1
+Cyc=        182 [0] PCReg=[800000b0] uPC=[32] Bus=[00000001] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[ffffff64] MA=[800000ac] InstReg=[00100513]     li      a0, 1
+Cyc=        183 [0] PCReg=[800000b0] uPC=[33] Bus=[00000001] RegSel=[1] RegAddr=[10] A=[00000000] B=[00000001] MA=[800000ac] InstReg=[00100513]     li      a0, 1
+Cyc=        184 [1] PCReg=[800000b0] uPC=[00] Bus=[800000b0] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000001] MA=[800000ac] InstReg=[00100513] F   li      a0, 1
+Cyc=        185 [0] PCReg=[800000b0] uPC=[01] Bus=[01f51513] RegSel=[7] RegAddr=[ 0] A=[800000b0] B=[00000001] MA=[800000b0] InstReg=[00100513]  M  li      a0, 1
+Cyc=        186 [0] PCReg=[800000b0] uPC=[02] Bus=[800000b4] RegSel=[0] RegAddr=[32] A=[800000b0] B=[00000001] MA=[800000b0] InstReg=[01f51513]     slli    a0, a0, 31
+Cyc=        187 [0] PCReg=[800000b4] uPC=[3a] Bus=[00000001] RegSel=[2] RegAddr=[10] A=[800000b0] B=[00000001] MA=[800000b0] InstReg=[01f51513]     slli    a0, a0, 31
+Cyc=        188 [0] PCReg=[800000b4] uPC=[3b] Bus=[0000001f] RegSel=[7] RegAddr=[ 0] A=[00000001] B=[00000001] MA=[800000b0] InstReg=[01f51513]     slli    a0, a0, 31
+Cyc=        189 [0] PCReg=[800000b4] uPC=[3c] Bus=[80000000] RegSel=[1] RegAddr=[10] A=[00000001] B=[0000001f] MA=[800000b0] InstReg=[01f51513]     slli    a0, a0, 31
+Cyc=        190 [1] PCReg=[800000b4] uPC=[00] Bus=[800000b4] RegSel=[0] RegAddr=[32] A=[00000001] B=[0000001f] MA=[800000b0] InstReg=[01f51513] F   slli    a0, a0, 31
+Cyc=        191 [0] PCReg=[800000b4] uPC=[01] Bus=[00054c63] RegSel=[7] RegAddr=[ 0] A=[800000b4] B=[0000001f] MA=[800000b4] InstReg=[01f51513]  M  slli    a0, a0, 31
+Cyc=        192 [0] PCReg=[800000b4] uPC=[02] Bus=[800000b8] RegSel=[0] RegAddr=[32] A=[800000b4] B=[0000001f] MA=[800000b4] InstReg=[00054c63]     bltz    a0, pc + 24
+Cyc=        193 [0] PCReg=[800000b8] uPC=[80] Bus=[80000000] RegSel=[2] RegAddr=[10] A=[800000b4] B=[0000001f] MA=[800000b4] InstReg=[00054c63]     bltz    a0, pc + 24
+Cyc=        194 [0] PCReg=[800000b8] uPC=[81] Bus=[00000000] RegSel=[3] RegAddr=[ 0] A=[80000000] B=[0000001f] MA=[800000b4] InstReg=[00054c63]     bltz    a0, pc + 24
+Cyc=        195 [0] PCReg=[800000b8] uPC=[82] Bus=[00000001] RegSel=[7] RegAddr=[ 0] A=[80000000] B=[00000000] MA=[800000b4] InstReg=[00054c63]     bltz    a0, pc + 24
+Cyc=        196 [0] PCReg=[800000b8] uPC=[83] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000001] B=[00000000] MA=[800000b4] InstReg=[00054c63]     bltz    a0, pc + 24
+Cyc=        197 [0] PCReg=[800000b8] uPC=[94] Bus=[800000b8] RegSel=[0] RegAddr=[32] A=[00000001] B=[00000000] MA=[800000b4] InstReg=[00054c63]     bltz    a0, pc + 24
+Cyc=        198 [0] PCReg=[800000b8] uPC=[95] Bus=[800000b4] RegSel=[7] RegAddr=[ 0] A=[800000b8] B=[00000000] MA=[800000b4] InstReg=[00054c63]     bltz    a0, pc + 24
+Cyc=        199 [0] PCReg=[800000b8] uPC=[96] Bus=[00000018] RegSel=[7] RegAddr=[ 0] A=[800000b4] B=[00000000] MA=[800000b4] InstReg=[00054c63]     bltz    a0, pc + 24
+Cyc=        200 [0] PCReg=[800000b8] uPC=[97] Bus=[800000cc] RegSel=[0] RegAddr=[32] A=[800000b4] B=[00000018] MA=[800000b4] InstReg=[00054c63]     bltz    a0, pc + 24
+Cyc=        201 [1] PCReg=[800000cc] uPC=[00] Bus=[800000cc] RegSel=[0] RegAddr=[32] A=[800000b4] B=[00000018] MA=[800000b4] InstReg=[00054c63] F   bltz    a0, pc + 24
+Cyc=        202 [0] PCReg=[800000cc] uPC=[01] Bus=[80000297] RegSel=[7] RegAddr=[ 0] A=[800000cc] B=[00000018] MA=[800000cc] InstReg=[00054c63]  M  bltz    a0, pc + 24
+Cyc=        203 [0] PCReg=[800000cc] uPC=[02] Bus=[800000d0] RegSel=[0] RegAddr=[32] A=[800000cc] B=[00000018] MA=[800000cc] InstReg=[80000297]     auipc   t0, 0x80000
+Cyc=        204 [0] PCReg=[800000d0] uPC=[74] Bus=[800000d0] RegSel=[0] RegAddr=[32] A=[800000cc] B=[00000018] MA=[800000cc] InstReg=[80000297]     auipc   t0, 0x80000
+Cyc=        205 [0] PCReg=[800000d0] uPC=[75] Bus=[800000cc] RegSel=[7] RegAddr=[ 0] A=[800000d0] B=[00000018] MA=[800000cc] InstReg=[80000297]     auipc   t0, 0x80000
+Cyc=        206 [0] PCReg=[800000d0] uPC=[76] Bus=[80000000] RegSel=[7] RegAddr=[ 0] A=[800000cc] B=[00000018] MA=[800000cc] InstReg=[80000297]     auipc   t0, 0x80000
+Cyc=        207 [0] PCReg=[800000d0] uPC=[77] Bus=[000000cc] RegSel=[1] RegAddr=[ 5] A=[800000cc] B=[80000000] MA=[800000cc] InstReg=[80000297]     auipc   t0, 0x80000
+Cyc=        208 [1] PCReg=[800000d0] uPC=[00] Bus=[800000d0] RegSel=[0] RegAddr=[32] A=[800000cc] B=[80000000] MA=[800000cc] InstReg=[80000297] F   auipc   t0, 0x80000
+Cyc=        209 [0] PCReg=[800000d0] uPC=[01] Bus=[f3428293] RegSel=[7] RegAddr=[ 0] A=[800000d0] B=[80000000] MA=[800000d0] InstReg=[80000297]  M  auipc   t0, 0x80000
+Cyc=        210 [0] PCReg=[800000d0] uPC=[02] Bus=[800000d4] RegSel=[0] RegAddr=[32] A=[800000d0] B=[80000000] MA=[800000d0] InstReg=[f3428293]     addi    t0, t0, -204
+Cyc=        211 [0] PCReg=[800000d4] uPC=[31] Bus=[000000cc] RegSel=[2] RegAddr=[ 5] A=[800000d0] B=[80000000] MA=[800000d0] InstReg=[f3428293]     addi    t0, t0, -204
+Cyc=        212 [0] PCReg=[800000d4] uPC=[32] Bus=[ffffff34] RegSel=[7] RegAddr=[ 0] A=[000000cc] B=[80000000] MA=[800000d0] InstReg=[f3428293]     addi    t0, t0, -204
+Cyc=        213 [0] PCReg=[800000d4] uPC=[33] Bus=[00000000] RegSel=[1] RegAddr=[ 5] A=[000000cc] B=[ffffff34] MA=[800000d0] InstReg=[f3428293]     addi    t0, t0, -204
+Cyc=        214 [1] PCReg=[800000d4] uPC=[00] Bus=[800000d4] RegSel=[0] RegAddr=[32] A=[000000cc] B=[ffffff34] MA=[800000d0] InstReg=[f3428293] F   addi    t0, t0, -204
+Cyc=        215 [0] PCReg=[800000d4] uPC=[01] Bus=[00028e63] RegSel=[7] RegAddr=[ 0] A=[800000d4] B=[ffffff34] MA=[800000d4] InstReg=[f3428293]  M  addi    t0, t0, -204
+Cyc=        216 [0] PCReg=[800000d4] uPC=[02] Bus=[800000d8] RegSel=[0] RegAddr=[32] A=[800000d4] B=[ffffff34] MA=[800000d4] InstReg=[00028e63]     beqz    t0, pc + 28
+Cyc=        217 [0] PCReg=[800000d8] uPC=[78] Bus=[00000000] RegSel=[2] RegAddr=[ 5] A=[800000d4] B=[ffffff34] MA=[800000d4] InstReg=[00028e63]     beqz    t0, pc + 28
+Cyc=        218 [0] PCReg=[800000d8] uPC=[79] Bus=[00000000] RegSel=[3] RegAddr=[ 0] A=[00000000] B=[ffffff34] MA=[800000d4] InstReg=[00028e63]     beqz    t0, pc + 28
+Cyc=        219 [0] PCReg=[800000d8] uPC=[7a] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[800000d4] InstReg=[00028e63]     beqz    t0, pc + 28
+Cyc=        220 [0] PCReg=[800000d8] uPC=[94] Bus=[800000d8] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000000] MA=[800000d4] InstReg=[00028e63]     beqz    t0, pc + 28
+Cyc=        221 [0] PCReg=[800000d8] uPC=[95] Bus=[800000d4] RegSel=[7] RegAddr=[ 0] A=[800000d8] B=[00000000] MA=[800000d4] InstReg=[00028e63]     beqz    t0, pc + 28
+Cyc=        222 [0] PCReg=[800000d8] uPC=[96] Bus=[0000001c] RegSel=[7] RegAddr=[ 0] A=[800000d4] B=[00000000] MA=[800000d4] InstReg=[00028e63]     beqz    t0, pc + 28
+Cyc=        223 [0] PCReg=[800000d8] uPC=[97] Bus=[800000f0] RegSel=[0] RegAddr=[32] A=[800000d4] B=[0000001c] MA=[800000d4] InstReg=[00028e63]     beqz    t0, pc + 28
+Cyc=        224 [1] PCReg=[800000f0] uPC=[00] Bus=[800000f0] RegSel=[0] RegAddr=[32] A=[800000d4] B=[0000001c] MA=[800000d4] InstReg=[00028e63] F   beqz    t0, pc + 28
+Cyc=        225 [0] PCReg=[800000f0] uPC=[01] Bus=[30005073] RegSel=[7] RegAddr=[ 0] A=[800000f0] B=[0000001c] MA=[800000f0] InstReg=[00028e63]  M  beqz    t0, pc + 28
+Cyc=        226 [0] PCReg=[800000f0] uPC=[02] Bus=[800000f4] RegSel=[0] RegAddr=[32] A=[800000f0] B=[0000001c] MA=[800000f0] InstReg=[30005073]     csrwi   mstatus, 0
+Cyc=        227 [0] PCReg=[800000f4] uPC=[a8] Bus=[00000300] RegSel=[5] RegAddr=[ 0] A=[800000f0] B=[0000001c] MA=[800000f0] InstReg=[30005073]     csrwi   mstatus, 0
+Cyc=        228 [0] PCReg=[800000f4] uPC=[a9] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[800000f0] B=[0000001c] MA=[800000f0] InstReg=[30005073]     csrwi   mstatus, 0
+Cyc=        229 [0] PCReg=[800000f4] uPC=[aa] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[0000001c] MA=[800000f0] InstReg=[30005073]     csrwi   mstatus, 0
+Cyc=        230 [0] PCReg=[800000f4] uPC=[ab] Bus=[00001800] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[0000001c] MA=[800000f0] InstReg=[30005073]     csrwi   mstatus, 0
+Cyc=        231 [0] PCReg=[800000f4] uPC=[ac] Bus=[00001800] RegSel=[1] RegAddr=[ 0] A=[00001800] B=[0000001c] MA=[800000f0] InstReg=[30005073]     csrwi   mstatus, 0
+Cyc=        232 [1] PCReg=[800000f4] uPC=[00] Bus=[800000f4] RegSel=[0] RegAddr=[32] A=[00001800] B=[0000001c] MA=[800000f0] InstReg=[30005073] F   csrwi   mstatus, 0
+Cyc=        233 [0] PCReg=[800000f4] uPC=[01] Bus=[00000297] RegSel=[7] RegAddr=[ 0] A=[800000f4] B=[0000001c] MA=[800000f4] InstReg=[30005073]  M  csrwi   mstatus, 0
+Cyc=        234 [0] PCReg=[800000f4] uPC=[02] Bus=[800000f8] RegSel=[0] RegAddr=[32] A=[800000f4] B=[0000001c] MA=[800000f4] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        235 [0] PCReg=[800000f8] uPC=[74] Bus=[800000f8] RegSel=[0] RegAddr=[32] A=[800000f4] B=[0000001c] MA=[800000f4] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        236 [0] PCReg=[800000f8] uPC=[75] Bus=[800000f4] RegSel=[7] RegAddr=[ 0] A=[800000f8] B=[0000001c] MA=[800000f4] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        237 [0] PCReg=[800000f8] uPC=[76] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[800000f4] B=[0000001c] MA=[800000f4] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        238 [0] PCReg=[800000f8] uPC=[77] Bus=[800000f4] RegSel=[1] RegAddr=[ 5] A=[800000f4] B=[00000000] MA=[800000f4] InstReg=[00000297]     auipc   t0, 0x0
+Cyc=        239 [1] PCReg=[800000f8] uPC=[00] Bus=[800000f8] RegSel=[0] RegAddr=[32] A=[800000f4] B=[00000000] MA=[800000f4] InstReg=[00000297] F   auipc   t0, 0x0
+Cyc=        240 [0] PCReg=[800000f8] uPC=[01] Bus=[01428293] RegSel=[7] RegAddr=[ 0] A=[800000f8] B=[00000000] MA=[800000f8] InstReg=[00000297]  M  auipc   t0, 0x0
+Cyc=        241 [0] PCReg=[800000f8] uPC=[02] Bus=[800000fc] RegSel=[0] RegAddr=[32] A=[800000f8] B=[00000000] MA=[800000f8] InstReg=[01428293]     addi    t0, t0, 20
+Cyc=        242 [0] PCReg=[800000fc] uPC=[31] Bus=[800000f4] RegSel=[2] RegAddr=[ 5] A=[800000f8] B=[00000000] MA=[800000f8] InstReg=[01428293]     addi    t0, t0, 20
+Cyc=        243 [0] PCReg=[800000fc] uPC=[32] Bus=[00000014] RegSel=[7] RegAddr=[ 0] A=[800000f4] B=[00000000] MA=[800000f8] InstReg=[01428293]     addi    t0, t0, 20
+Cyc=        244 [0] PCReg=[800000fc] uPC=[33] Bus=[80000108] RegSel=[1] RegAddr=[ 5] A=[800000f4] B=[00000014] MA=[800000f8] InstReg=[01428293]     addi    t0, t0, 20
+Cyc=        245 [1] PCReg=[800000fc] uPC=[00] Bus=[800000fc] RegSel=[0] RegAddr=[32] A=[800000f4] B=[00000014] MA=[800000f8] InstReg=[01428293] F   addi    t0, t0, 20
+Cyc=        246 [0] PCReg=[800000fc] uPC=[01] Bus=[34129073] RegSel=[7] RegAddr=[ 0] A=[800000fc] B=[00000014] MA=[800000fc] InstReg=[01428293]  M  addi    t0, t0, 20
+Cyc=        247 [0] PCReg=[800000fc] uPC=[02] Bus=[80000100] RegSel=[0] RegAddr=[32] A=[800000fc] B=[00000014] MA=[800000fc] InstReg=[34129073]     csrw    mepc, t0
+Cyc=        248 [0] PCReg=[80000100] uPC=[99] Bus=[00000341] RegSel=[5] RegAddr=[ 0] A=[800000fc] B=[00000014] MA=[800000fc] InstReg=[34129073]     csrw    mepc, t0
+Cyc=        249 [0] PCReg=[80000100] uPC=[9a] Bus=[80000108] RegSel=[2] RegAddr=[ 5] A=[800000fc] B=[00000014] MA=[800000fc] InstReg=[34129073]     csrw    mepc, t0
+Cyc=        250 [0] PCReg=[80000100] uPC=[9b] Bus=[80000108] RegSel=[6] RegAddr=[ 0] A=[80000108] B=[00000014] MA=[800000fc] InstReg=[34129073]     csrw    mepc, t0
+Cyc=        251 [0] PCReg=[80000100] uPC=[9c] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[80000108] B=[00000014] MA=[800000fc] InstReg=[34129073]     csrw    mepc, t0
+Cyc=        252 [0] PCReg=[80000100] uPC=[9d] Bus=[00000000] RegSel=[1] RegAddr=[ 0] A=[00000000] B=[00000014] MA=[800000fc] InstReg=[34129073]     csrw    mepc, t0
+Cyc=        253 [1] PCReg=[80000100] uPC=[00] Bus=[80000100] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000014] MA=[800000fc] InstReg=[34129073] F   csrw    mepc, t0
+Cyc=        254 [0] PCReg=[80000100] uPC=[01] Bus=[f1402573] RegSel=[7] RegAddr=[ 0] A=[80000100] B=[00000014] MA=[80000100] InstReg=[34129073]  M  csrw    mepc, t0
+Cyc=        255 [0] PCReg=[80000100] uPC=[02] Bus=[80000104] RegSel=[0] RegAddr=[32] A=[80000100] B=[00000014] MA=[80000100] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=        256 [0] PCReg=[80000104] uPC=[a3] Bus=[ffffff14] RegSel=[5] RegAddr=[ 0] A=[80000100] B=[00000014] MA=[80000100] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=        257 [0] PCReg=[80000104] uPC=[a4] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000100] B=[00000014] MA=[80000100] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=        258 [0] PCReg=[80000104] uPC=[a5] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000014] MA=[80000100] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=        259 [0] PCReg=[80000104] uPC=[a6] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000014] MA=[80000100] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=        260 [0] PCReg=[80000104] uPC=[a7] Bus=[00000000] RegSel=[1] RegAddr=[10] A=[00000000] B=[00000014] MA=[80000100] InstReg=[f1402573]     csrr    a0, mhartid
+Cyc=        261 [1] PCReg=[80000104] uPC=[00] Bus=[80000104] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000014] MA=[80000100] InstReg=[f1402573] F   csrr    a0, mhartid
+Cyc=        262 [0] PCReg=[80000104] uPC=[01] Bus=[30200073] RegSel=[7] RegAddr=[ 0] A=[80000104] B=[00000014] MA=[80000104] InstReg=[f1402573]  M  csrr    a0, mhartid
+Cyc=        263 [0] PCReg=[80000104] uPC=[02] Bus=[80000108] RegSel=[0] RegAddr=[32] A=[80000104] B=[00000014] MA=[80000104] InstReg=[30200073]     mret
+Cyc=        264 [0] PCReg=[80000108] uPC=[b7] Bus=[00000302] RegSel=[5] RegAddr=[ 0] A=[80000104] B=[00000014] MA=[80000104] InstReg=[30200073]     mret
+Cyc=        265 [0] PCReg=[80000108] uPC=[b8] Bus=[80000108] RegSel=[0] RegAddr=[32] A=[80000104] B=[00000014] MA=[80000104] InstReg=[30200073]     mret
+Cyc=        266 [1] PCReg=[80000108] uPC=[00] Bus=[80000108] RegSel=[0] RegAddr=[32] A=[80000104] B=[00000014] MA=[80000104] InstReg=[30200073] F   mret
+Cyc=        267 [0] PCReg=[80000108] uPC=[01] Bus=[0f000093] RegSel=[7] RegAddr=[ 0] A=[80000108] B=[00000014] MA=[80000108] InstReg=[30200073]  M  mret
+Cyc=        268 [0] PCReg=[80000108] uPC=[02] Bus=[8000010c] RegSel=[0] RegAddr=[32] A=[80000108] B=[00000014] MA=[80000108] InstReg=[0f000093]     li      ra, 240
+Cyc=        269 [0] PCReg=[8000010c] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000108] B=[00000014] MA=[80000108] InstReg=[0f000093]     li      ra, 240
+Cyc=        270 [0] PCReg=[8000010c] uPC=[32] Bus=[000000f0] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000014] MA=[80000108] InstReg=[0f000093]     li      ra, 240
+Cyc=        271 [0] PCReg=[8000010c] uPC=[33] Bus=[000000f0] RegSel=[1] RegAddr=[ 1] A=[00000000] B=[000000f0] MA=[80000108] InstReg=[0f000093]     li      ra, 240
+Cyc=        272 [1] PCReg=[8000010c] uPC=[00] Bus=[8000010c] RegSel=[0] RegAddr=[32] A=[00000000] B=[000000f0] MA=[80000108] InstReg=[0f000093] F   li      ra, 240
+Cyc=        273 [0] PCReg=[8000010c] uPC=[01] Bus=[00aa0137] RegSel=[7] RegAddr=[ 0] A=[8000010c] B=[000000f0] MA=[8000010c] InstReg=[0f000093]  M  li      ra, 240
+Cyc=        274 [0] PCReg=[8000010c] uPC=[02] Bus=[80000110] RegSel=[0] RegAddr=[32] A=[8000010c] B=[000000f0] MA=[8000010c] InstReg=[00aa0137]     lui     sp, 0xaa0
+Cyc=        275 [0] PCReg=[80000110] uPC=[30] Bus=[00aa0000] RegSel=[1] RegAddr=[ 2] A=[8000010c] B=[000000f0] MA=[8000010c] InstReg=[00aa0137]     lui     sp, 0xaa0
+Cyc=        276 [1] PCReg=[80000110] uPC=[00] Bus=[80000110] RegSel=[0] RegAddr=[32] A=[8000010c] B=[000000f0] MA=[8000010c] InstReg=[00aa0137] F   lui     sp, 0xaa0
+Cyc=        277 [0] PCReg=[80000110] uPC=[01] Bus=[0aa10113] RegSel=[7] RegAddr=[ 0] A=[80000110] B=[000000f0] MA=[80000110] InstReg=[00aa0137]  M  lui     sp, 0xaa0
+Cyc=        278 [0] PCReg=[80000110] uPC=[02] Bus=[80000114] RegSel=[0] RegAddr=[32] A=[80000110] B=[000000f0] MA=[80000110] InstReg=[0aa10113]     addi    sp, sp, 170
+Cyc=        279 [0] PCReg=[80000114] uPC=[31] Bus=[00aa0000] RegSel=[2] RegAddr=[ 2] A=[80000110] B=[000000f0] MA=[80000110] InstReg=[0aa10113]     addi    sp, sp, 170
+Cyc=        280 [0] PCReg=[80000114] uPC=[32] Bus=[000000aa] RegSel=[7] RegAddr=[ 0] A=[00aa0000] B=[000000f0] MA=[80000110] InstReg=[0aa10113]     addi    sp, sp, 170
+Cyc=        281 [0] PCReg=[80000114] uPC=[33] Bus=[00aa00aa] RegSel=[1] RegAddr=[ 2] A=[00aa0000] B=[000000aa] MA=[80000110] InstReg=[0aa10113]     addi    sp, sp, 170
+Cyc=        282 [1] PCReg=[80000114] uPC=[00] Bus=[80000114] RegSel=[0] RegAddr=[32] A=[00aa0000] B=[000000aa] MA=[80000110] InstReg=[0aa10113] F   addi    sp, sp, 170
+Cyc=        283 [0] PCReg=[80000114] uPC=[01] Bus=[0020a023] RegSel=[7] RegAddr=[ 0] A=[80000114] B=[000000aa] MA=[80000114] InstReg=[0aa10113]  M  addi    sp, sp, 170
+Cyc=        284 [0] PCReg=[80000114] uPC=[02] Bus=[80000118] RegSel=[0] RegAddr=[32] A=[80000114] B=[000000aa] MA=[80000114] InstReg=[0020a023]     sw      sp, 0(ra)
+Cyc=        285 [0] PCReg=[80000118] uPC=[0d] Bus=[000000f0] RegSel=[2] RegAddr=[ 1] A=[80000114] B=[000000aa] MA=[80000114] InstReg=[0020a023]     sw      sp, 0(ra)
+Cyc=        286 [0] PCReg=[80000118] uPC=[0e] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[000000aa] MA=[80000114] InstReg=[0020a023]     sw      sp, 0(ra)
+Cyc=        287 [0] PCReg=[80000118] uPC=[0f] Bus=[000000f0] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000000] MA=[80000114] InstReg=[0020a023]     sw      sp, 0(ra)
+Cyc=        288 [0] PCReg=[80000118] uPC=[10] Bus=[00aa00aa] RegSel=[3] RegAddr=[ 2] A=[000000f0] B=[00000000] MA=[000000f0] InstReg=[0020a023]  M  sw      sp, 0(ra)
+Cyc=        289 [0] PCReg=[80000118] uPC=[11] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000000] MA=[000000f0] InstReg=[0020a023]     sw      sp, 0(ra)
+Cyc=        290 [1] PCReg=[80000118] uPC=[00] Bus=[80000118] RegSel=[0] RegAddr=[32] A=[000000f0] B=[00000000] MA=[000000f0] InstReg=[0020a023] F   sw      sp, 0(ra)
+Cyc=        291 [0] PCReg=[80000118] uPC=[01] Bus=[0000a703] RegSel=[7] RegAddr=[ 0] A=[80000118] B=[00000000] MA=[80000118] InstReg=[0020a023]  M  sw      sp, 0(ra)
+Cyc=        292 [0] PCReg=[80000118] uPC=[02] Bus=[8000011c] RegSel=[0] RegAddr=[32] A=[80000118] B=[00000000] MA=[80000118] InstReg=[0000a703]     lw      a4, 0(ra)
+Cyc=        293 [0] PCReg=[8000011c] uPC=[08] Bus=[000000f0] RegSel=[2] RegAddr=[ 1] A=[80000118] B=[00000000] MA=[80000118] InstReg=[0000a703]     lw      a4, 0(ra)
+Cyc=        294 [0] PCReg=[8000011c] uPC=[09] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000000] MA=[80000118] InstReg=[0000a703]     lw      a4, 0(ra)
+Cyc=        295 [0] PCReg=[8000011c] uPC=[0a] Bus=[000000f0] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000000] MA=[80000118] InstReg=[0000a703]     lw      a4, 0(ra)
+Cyc=        296 [0] PCReg=[8000011c] uPC=[0b] Bus=[00aa00aa] RegSel=[1] RegAddr=[14] A=[000000f0] B=[00000000] MA=[000000f0] InstReg=[0000a703]  M  lw      a4, 0(ra)
+Cyc=        297 [0] PCReg=[8000011c] uPC=[0c] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000000] MA=[000000f0] InstReg=[0000a703]     lw      a4, 0(ra)
+Cyc=        298 [1] PCReg=[8000011c] uPC=[00] Bus=[8000011c] RegSel=[0] RegAddr=[32] A=[000000f0] B=[00000000] MA=[000000f0] InstReg=[0000a703] F   lw      a4, 0(ra)
+Cyc=        299 [0] PCReg=[8000011c] uPC=[01] Bus=[00aa0eb7] RegSel=[7] RegAddr=[ 0] A=[8000011c] B=[00000000] MA=[8000011c] InstReg=[0000a703]  M  lw      a4, 0(ra)
+Cyc=        300 [0] PCReg=[8000011c] uPC=[02] Bus=[80000120] RegSel=[0] RegAddr=[32] A=[8000011c] B=[00000000] MA=[8000011c] InstReg=[00aa0eb7]     lui     t4, 0xaa0
+Cyc=        301 [0] PCReg=[80000120] uPC=[30] Bus=[00aa0000] RegSel=[1] RegAddr=[29] A=[8000011c] B=[00000000] MA=[8000011c] InstReg=[00aa0eb7]     lui     t4, 0xaa0
+Cyc=        302 [1] PCReg=[80000120] uPC=[00] Bus=[80000120] RegSel=[0] RegAddr=[32] A=[8000011c] B=[00000000] MA=[8000011c] InstReg=[00aa0eb7] F   lui     t4, 0xaa0
+Cyc=        303 [0] PCReg=[80000120] uPC=[01] Bus=[0aae8e93] RegSel=[7] RegAddr=[ 0] A=[80000120] B=[00000000] MA=[80000120] InstReg=[00aa0eb7]  M  lui     t4, 0xaa0
+Cyc=        304 [0] PCReg=[80000120] uPC=[02] Bus=[80000124] RegSel=[0] RegAddr=[32] A=[80000120] B=[00000000] MA=[80000120] InstReg=[0aae8e93]     addi    t4, t4, 170
+Cyc=        305 [0] PCReg=[80000124] uPC=[31] Bus=[00aa0000] RegSel=[2] RegAddr=[29] A=[80000120] B=[00000000] MA=[80000120] InstReg=[0aae8e93]     addi    t4, t4, 170
+Cyc=        306 [0] PCReg=[80000124] uPC=[32] Bus=[000000aa] RegSel=[7] RegAddr=[ 0] A=[00aa0000] B=[00000000] MA=[80000120] InstReg=[0aae8e93]     addi    t4, t4, 170
+Cyc=        307 [0] PCReg=[80000124] uPC=[33] Bus=[00aa00aa] RegSel=[1] RegAddr=[29] A=[00aa0000] B=[000000aa] MA=[80000120] InstReg=[0aae8e93]     addi    t4, t4, 170
+Cyc=        308 [1] PCReg=[80000124] uPC=[00] Bus=[80000124] RegSel=[0] RegAddr=[32] A=[00aa0000] B=[000000aa] MA=[80000120] InstReg=[0aae8e93] F   addi    t4, t4, 170
+Cyc=        309 [0] PCReg=[80000124] uPC=[01] Bus=[00200193] RegSel=[7] RegAddr=[ 0] A=[80000124] B=[000000aa] MA=[80000124] InstReg=[0aae8e93]  M  addi    t4, t4, 170
+Cyc=        310 [0] PCReg=[80000124] uPC=[02] Bus=[80000128] RegSel=[0] RegAddr=[32] A=[80000124] B=[000000aa] MA=[80000124] InstReg=[00200193]     li      gp, 2
+Cyc=        311 [0] PCReg=[80000128] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000124] B=[000000aa] MA=[80000124] InstReg=[00200193]     li      gp, 2
+Cyc=        312 [0] PCReg=[80000128] uPC=[32] Bus=[00000002] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[000000aa] MA=[80000124] InstReg=[00200193]     li      gp, 2
+Cyc=        313 [0] PCReg=[80000128] uPC=[33] Bus=[00000002] RegSel=[1] RegAddr=[ 3] A=[00000000] B=[00000002] MA=[80000124] InstReg=[00200193]     li      gp, 2
+Cyc=        314 [1] PCReg=[80000128] uPC=[00] Bus=[80000128] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000002] MA=[80000124] InstReg=[00200193] F   li      gp, 2
+Cyc=        315 [0] PCReg=[80000128] uPC=[01] Bus=[09d71c63] RegSel=[7] RegAddr=[ 0] A=[80000128] B=[00000002] MA=[80000128] InstReg=[00200193]  M  li      gp, 2
+Cyc=        316 [0] PCReg=[80000128] uPC=[02] Bus=[8000012c] RegSel=[0] RegAddr=[32] A=[80000128] B=[00000002] MA=[80000128] InstReg=[09d71c63]     bne     a4, t4, pc + 152
+Cyc=        317 [0] PCReg=[8000012c] uPC=[7c] Bus=[00aa00aa] RegSel=[2] RegAddr=[14] A=[80000128] B=[00000002] MA=[80000128] InstReg=[09d71c63]     bne     a4, t4, pc + 152
+Cyc=        318 [0] PCReg=[8000012c] uPC=[7d] Bus=[00aa00aa] RegSel=[3] RegAddr=[29] A=[00aa00aa] B=[00000002] MA=[80000128] InstReg=[09d71c63]     bne     a4, t4, pc + 152
+Cyc=        319 [0] PCReg=[8000012c] uPC=[7e] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00aa00aa] B=[00aa00aa] MA=[80000128] InstReg=[09d71c63]     bne     a4, t4, pc + 152
+Cyc=        320 [0] PCReg=[8000012c] uPC=[7f] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00aa00aa] B=[00aa00aa] MA=[80000128] InstReg=[09d71c63]     bne     a4, t4, pc + 152
+Cyc=        321 [1] PCReg=[8000012c] uPC=[00] Bus=[8000012c] RegSel=[0] RegAddr=[32] A=[00aa00aa] B=[00aa00aa] MA=[80000128] InstReg=[09d71c63] F   bne     a4, t4, pc + 152
+Cyc=        322 [0] PCReg=[8000012c] uPC=[01] Bus=[0f000093] RegSel=[7] RegAddr=[ 0] A=[8000012c] B=[00aa00aa] MA=[8000012c] InstReg=[09d71c63]  M  bne     a4, t4, pc + 152
+Cyc=        323 [0] PCReg=[8000012c] uPC=[02] Bus=[80000130] RegSel=[0] RegAddr=[32] A=[8000012c] B=[00aa00aa] MA=[8000012c] InstReg=[0f000093]     li      ra, 240
+Cyc=        324 [0] PCReg=[80000130] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[8000012c] B=[00aa00aa] MA=[8000012c] InstReg=[0f000093]     li      ra, 240
+Cyc=        325 [0] PCReg=[80000130] uPC=[32] Bus=[000000f0] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00aa00aa] MA=[8000012c] InstReg=[0f000093]     li      ra, 240
+Cyc=        326 [0] PCReg=[80000130] uPC=[33] Bus=[000000f0] RegSel=[1] RegAddr=[ 1] A=[00000000] B=[000000f0] MA=[8000012c] InstReg=[0f000093]     li      ra, 240
+Cyc=        327 [1] PCReg=[80000130] uPC=[00] Bus=[80000130] RegSel=[0] RegAddr=[32] A=[00000000] B=[000000f0] MA=[8000012c] InstReg=[0f000093] F   li      ra, 240
+Cyc=        328 [0] PCReg=[80000130] uPC=[01] Bus=[aa00b137] RegSel=[7] RegAddr=[ 0] A=[80000130] B=[000000f0] MA=[80000130] InstReg=[0f000093]  M  li      ra, 240
+Cyc=        329 [0] PCReg=[80000130] uPC=[02] Bus=[80000134] RegSel=[0] RegAddr=[32] A=[80000130] B=[000000f0] MA=[80000130] InstReg=[aa00b137]     lui     sp, 0xaa00b
+Cyc=        330 [0] PCReg=[80000134] uPC=[30] Bus=[aa00b000] RegSel=[1] RegAddr=[ 2] A=[80000130] B=[000000f0] MA=[80000130] InstReg=[aa00b137]     lui     sp, 0xaa00b
+Cyc=        331 [1] PCReg=[80000134] uPC=[00] Bus=[80000134] RegSel=[0] RegAddr=[32] A=[80000130] B=[000000f0] MA=[80000130] InstReg=[aa00b137] F   lui     sp, 0xaa00b
+Cyc=        332 [0] PCReg=[80000134] uPC=[01] Bus=[a0010113] RegSel=[7] RegAddr=[ 0] A=[80000134] B=[000000f0] MA=[80000134] InstReg=[aa00b137]  M  lui     sp, 0xaa00b
+Cyc=        333 [0] PCReg=[80000134] uPC=[02] Bus=[80000138] RegSel=[0] RegAddr=[32] A=[80000134] B=[000000f0] MA=[80000134] InstReg=[a0010113]     addi    sp, sp, -1536
+Cyc=        334 [0] PCReg=[80000138] uPC=[31] Bus=[aa00b000] RegSel=[2] RegAddr=[ 2] A=[80000134] B=[000000f0] MA=[80000134] InstReg=[a0010113]     addi    sp, sp, -1536
+Cyc=        335 [0] PCReg=[80000138] uPC=[32] Bus=[fffffa00] RegSel=[7] RegAddr=[ 0] A=[aa00b000] B=[000000f0] MA=[80000134] InstReg=[a0010113]     addi    sp, sp, -1536
+Cyc=        336 [0] PCReg=[80000138] uPC=[33] Bus=[aa00aa00] RegSel=[1] RegAddr=[ 2] A=[aa00b000] B=[fffffa00] MA=[80000134] InstReg=[a0010113]     addi    sp, sp, -1536
+Cyc=        337 [1] PCReg=[80000138] uPC=[00] Bus=[80000138] RegSel=[0] RegAddr=[32] A=[aa00b000] B=[fffffa00] MA=[80000134] InstReg=[a0010113] F   addi    sp, sp, -1536
+Cyc=        338 [0] PCReg=[80000138] uPC=[01] Bus=[0020a223] RegSel=[7] RegAddr=[ 0] A=[80000138] B=[fffffa00] MA=[80000138] InstReg=[a0010113]  M  addi    sp, sp, -1536
+Cyc=        339 [0] PCReg=[80000138] uPC=[02] Bus=[8000013c] RegSel=[0] RegAddr=[32] A=[80000138] B=[fffffa00] MA=[80000138] InstReg=[0020a223]     sw      sp, 4(ra)
+Cyc=        340 [0] PCReg=[8000013c] uPC=[0d] Bus=[000000f0] RegSel=[2] RegAddr=[ 1] A=[80000138] B=[fffffa00] MA=[80000138] InstReg=[0020a223]     sw      sp, 4(ra)
+Cyc=        341 [0] PCReg=[8000013c] uPC=[0e] Bus=[00000004] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[fffffa00] MA=[80000138] InstReg=[0020a223]     sw      sp, 4(ra)
+Cyc=        342 [0] PCReg=[8000013c] uPC=[0f] Bus=[000000f4] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000004] MA=[80000138] InstReg=[0020a223]     sw      sp, 4(ra)
+Cyc=        343 [0] PCReg=[8000013c] uPC=[10] Bus=[aa00aa00] RegSel=[3] RegAddr=[ 2] A=[000000f0] B=[00000004] MA=[000000f4] InstReg=[0020a223]  M  sw      sp, 4(ra)
+Cyc=        344 [0] PCReg=[8000013c] uPC=[11] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000004] MA=[000000f4] InstReg=[0020a223]     sw      sp, 4(ra)
+Cyc=        345 [1] PCReg=[8000013c] uPC=[00] Bus=[8000013c] RegSel=[0] RegAddr=[32] A=[000000f0] B=[00000004] MA=[000000f4] InstReg=[0020a223] F   sw      sp, 4(ra)
+Cyc=        346 [0] PCReg=[8000013c] uPC=[01] Bus=[0040a703] RegSel=[7] RegAddr=[ 0] A=[8000013c] B=[00000004] MA=[8000013c] InstReg=[0020a223]  M  sw      sp, 4(ra)
+Cyc=        347 [0] PCReg=[8000013c] uPC=[02] Bus=[80000140] RegSel=[0] RegAddr=[32] A=[8000013c] B=[00000004] MA=[8000013c] InstReg=[0040a703]     lw      a4, 4(ra)
+Cyc=        348 [0] PCReg=[80000140] uPC=[08] Bus=[000000f0] RegSel=[2] RegAddr=[ 1] A=[8000013c] B=[00000004] MA=[8000013c] InstReg=[0040a703]     lw      a4, 4(ra)
+Cyc=        349 [0] PCReg=[80000140] uPC=[09] Bus=[00000004] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000004] MA=[8000013c] InstReg=[0040a703]     lw      a4, 4(ra)
+Cyc=        350 [0] PCReg=[80000140] uPC=[0a] Bus=[000000f4] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000004] MA=[8000013c] InstReg=[0040a703]     lw      a4, 4(ra)
+Cyc=        351 [0] PCReg=[80000140] uPC=[0b] Bus=[aa00aa00] RegSel=[1] RegAddr=[14] A=[000000f0] B=[00000004] MA=[000000f4] InstReg=[0040a703]  M  lw      a4, 4(ra)
+Cyc=        352 [0] PCReg=[80000140] uPC=[0c] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000004] MA=[000000f4] InstReg=[0040a703]     lw      a4, 4(ra)
+Cyc=        353 [1] PCReg=[80000140] uPC=[00] Bus=[80000140] RegSel=[0] RegAddr=[32] A=[000000f0] B=[00000004] MA=[000000f4] InstReg=[0040a703] F   lw      a4, 4(ra)
+Cyc=        354 [0] PCReg=[80000140] uPC=[01] Bus=[aa00beb7] RegSel=[7] RegAddr=[ 0] A=[80000140] B=[00000004] MA=[80000140] InstReg=[0040a703]  M  lw      a4, 4(ra)
+Cyc=        355 [0] PCReg=[80000140] uPC=[02] Bus=[80000144] RegSel=[0] RegAddr=[32] A=[80000140] B=[00000004] MA=[80000140] InstReg=[aa00beb7]     lui     t4, 0xaa00b
+Cyc=        356 [0] PCReg=[80000144] uPC=[30] Bus=[aa00b000] RegSel=[1] RegAddr=[29] A=[80000140] B=[00000004] MA=[80000140] InstReg=[aa00beb7]     lui     t4, 0xaa00b
+Cyc=        357 [1] PCReg=[80000144] uPC=[00] Bus=[80000144] RegSel=[0] RegAddr=[32] A=[80000140] B=[00000004] MA=[80000140] InstReg=[aa00beb7] F   lui     t4, 0xaa00b
+Cyc=        358 [0] PCReg=[80000144] uPC=[01] Bus=[a00e8e93] RegSel=[7] RegAddr=[ 0] A=[80000144] B=[00000004] MA=[80000144] InstReg=[aa00beb7]  M  lui     t4, 0xaa00b
+Cyc=        359 [0] PCReg=[80000144] uPC=[02] Bus=[80000148] RegSel=[0] RegAddr=[32] A=[80000144] B=[00000004] MA=[80000144] InstReg=[a00e8e93]     addi    t4, t4, -1536
+Cyc=        360 [0] PCReg=[80000148] uPC=[31] Bus=[aa00b000] RegSel=[2] RegAddr=[29] A=[80000144] B=[00000004] MA=[80000144] InstReg=[a00e8e93]     addi    t4, t4, -1536
+Cyc=        361 [0] PCReg=[80000148] uPC=[32] Bus=[fffffa00] RegSel=[7] RegAddr=[ 0] A=[aa00b000] B=[00000004] MA=[80000144] InstReg=[a00e8e93]     addi    t4, t4, -1536
+Cyc=        362 [0] PCReg=[80000148] uPC=[33] Bus=[aa00aa00] RegSel=[1] RegAddr=[29] A=[aa00b000] B=[fffffa00] MA=[80000144] InstReg=[a00e8e93]     addi    t4, t4, -1536
+Cyc=        363 [1] PCReg=[80000148] uPC=[00] Bus=[80000148] RegSel=[0] RegAddr=[32] A=[aa00b000] B=[fffffa00] MA=[80000144] InstReg=[a00e8e93] F   addi    t4, t4, -1536
+Cyc=        364 [0] PCReg=[80000148] uPC=[01] Bus=[00300193] RegSel=[7] RegAddr=[ 0] A=[80000148] B=[fffffa00] MA=[80000148] InstReg=[a00e8e93]  M  addi    t4, t4, -1536
+Cyc=        365 [0] PCReg=[80000148] uPC=[02] Bus=[8000014c] RegSel=[0] RegAddr=[32] A=[80000148] B=[fffffa00] MA=[80000148] InstReg=[00300193]     li      gp, 3
+Cyc=        366 [0] PCReg=[8000014c] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000148] B=[fffffa00] MA=[80000148] InstReg=[00300193]     li      gp, 3
+Cyc=        367 [0] PCReg=[8000014c] uPC=[32] Bus=[00000003] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[fffffa00] MA=[80000148] InstReg=[00300193]     li      gp, 3
+Cyc=        368 [0] PCReg=[8000014c] uPC=[33] Bus=[00000003] RegSel=[1] RegAddr=[ 3] A=[00000000] B=[00000003] MA=[80000148] InstReg=[00300193]     li      gp, 3
+Cyc=        369 [1] PCReg=[8000014c] uPC=[00] Bus=[8000014c] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000003] MA=[80000148] InstReg=[00300193] F   li      gp, 3
+Cyc=        370 [0] PCReg=[8000014c] uPC=[01] Bus=[07d71a63] RegSel=[7] RegAddr=[ 0] A=[8000014c] B=[00000003] MA=[8000014c] InstReg=[00300193]  M  li      gp, 3
+Cyc=        371 [0] PCReg=[8000014c] uPC=[02] Bus=[80000150] RegSel=[0] RegAddr=[32] A=[8000014c] B=[00000003] MA=[8000014c] InstReg=[07d71a63]     bne     a4, t4, pc + 116
+Cyc=        372 [0] PCReg=[80000150] uPC=[7c] Bus=[aa00aa00] RegSel=[2] RegAddr=[14] A=[8000014c] B=[00000003] MA=[8000014c] InstReg=[07d71a63]     bne     a4, t4, pc + 116
+Cyc=        373 [0] PCReg=[80000150] uPC=[7d] Bus=[aa00aa00] RegSel=[3] RegAddr=[29] A=[aa00aa00] B=[00000003] MA=[8000014c] InstReg=[07d71a63]     bne     a4, t4, pc + 116
+Cyc=        374 [0] PCReg=[80000150] uPC=[7e] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[aa00aa00] B=[aa00aa00] MA=[8000014c] InstReg=[07d71a63]     bne     a4, t4, pc + 116
+Cyc=        375 [0] PCReg=[80000150] uPC=[7f] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[aa00aa00] B=[aa00aa00] MA=[8000014c] InstReg=[07d71a63]     bne     a4, t4, pc + 116
+Cyc=        376 [1] PCReg=[80000150] uPC=[00] Bus=[80000150] RegSel=[0] RegAddr=[32] A=[aa00aa00] B=[aa00aa00] MA=[8000014c] InstReg=[07d71a63] F   bne     a4, t4, pc + 116
+Cyc=        377 [0] PCReg=[80000150] uPC=[01] Bus=[0f000093] RegSel=[7] RegAddr=[ 0] A=[80000150] B=[aa00aa00] MA=[80000150] InstReg=[07d71a63]  M  bne     a4, t4, pc + 116
+Cyc=        378 [0] PCReg=[80000150] uPC=[02] Bus=[80000154] RegSel=[0] RegAddr=[32] A=[80000150] B=[aa00aa00] MA=[80000150] InstReg=[0f000093]     li      ra, 240
+Cyc=        379 [0] PCReg=[80000154] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000150] B=[aa00aa00] MA=[80000150] InstReg=[0f000093]     li      ra, 240
+Cyc=        380 [0] PCReg=[80000154] uPC=[32] Bus=[000000f0] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[aa00aa00] MA=[80000150] InstReg=[0f000093]     li      ra, 240
+Cyc=        381 [0] PCReg=[80000154] uPC=[33] Bus=[000000f0] RegSel=[1] RegAddr=[ 1] A=[00000000] B=[000000f0] MA=[80000150] InstReg=[0f000093]     li      ra, 240
+Cyc=        382 [1] PCReg=[80000154] uPC=[00] Bus=[80000154] RegSel=[0] RegAddr=[32] A=[00000000] B=[000000f0] MA=[80000150] InstReg=[0f000093] F   li      ra, 240
+Cyc=        383 [0] PCReg=[80000154] uPC=[01] Bus=[00000113] RegSel=[7] RegAddr=[ 0] A=[80000154] B=[000000f0] MA=[80000154] InstReg=[0f000093]  M  li      ra, 240
+Cyc=        384 [0] PCReg=[80000154] uPC=[02] Bus=[80000158] RegSel=[0] RegAddr=[32] A=[80000154] B=[000000f0] MA=[80000154] InstReg=[00000113]     li      sp, 0
+Cyc=        385 [0] PCReg=[80000158] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000154] B=[000000f0] MA=[80000154] InstReg=[00000113]     li      sp, 0
+Cyc=        386 [0] PCReg=[80000158] uPC=[32] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[000000f0] MA=[80000154] InstReg=[00000113]     li      sp, 0
+Cyc=        387 [0] PCReg=[80000158] uPC=[33] Bus=[00000000] RegSel=[1] RegAddr=[ 2] A=[00000000] B=[00000000] MA=[80000154] InstReg=[00000113]     li      sp, 0
+Cyc=        388 [1] PCReg=[80000158] uPC=[00] Bus=[80000158] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000000] MA=[80000154] InstReg=[00000113] F   li      sp, 0
+Cyc=        389 [0] PCReg=[80000158] uPC=[01] Bus=[0020a423] RegSel=[7] RegAddr=[ 0] A=[80000158] B=[00000000] MA=[80000158] InstReg=[00000113]  M  li      sp, 0
+Cyc=        390 [0] PCReg=[80000158] uPC=[02] Bus=[8000015c] RegSel=[0] RegAddr=[32] A=[80000158] B=[00000000] MA=[80000158] InstReg=[0020a423]     sw      sp, 8(ra)
+Cyc=        391 [0] PCReg=[8000015c] uPC=[0d] Bus=[000000f0] RegSel=[2] RegAddr=[ 1] A=[80000158] B=[00000000] MA=[80000158] InstReg=[0020a423]     sw      sp, 8(ra)
+Cyc=        392 [0] PCReg=[8000015c] uPC=[0e] Bus=[00000008] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000000] MA=[80000158] InstReg=[0020a423]     sw      sp, 8(ra)
+Cyc=        393 [0] PCReg=[8000015c] uPC=[0f] Bus=[000000f8] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000008] MA=[80000158] InstReg=[0020a423]     sw      sp, 8(ra)
+Cyc=        394 [0] PCReg=[8000015c] uPC=[10] Bus=[00000000] RegSel=[3] RegAddr=[ 2] A=[000000f0] B=[00000008] MA=[000000f8] InstReg=[0020a423]  M  sw      sp, 8(ra)
+Cyc=        395 [0] PCReg=[8000015c] uPC=[11] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000008] MA=[000000f8] InstReg=[0020a423]     sw      sp, 8(ra)
+Cyc=        396 [1] PCReg=[8000015c] uPC=[00] Bus=[8000015c] RegSel=[0] RegAddr=[32] A=[000000f0] B=[00000008] MA=[000000f8] InstReg=[0020a423] F   sw      sp, 8(ra)
+Cyc=        397 [0] PCReg=[8000015c] uPC=[01] Bus=[0080a703] RegSel=[7] RegAddr=[ 0] A=[8000015c] B=[00000008] MA=[8000015c] InstReg=[0020a423]  M  sw      sp, 8(ra)
+Cyc=        398 [0] PCReg=[8000015c] uPC=[02] Bus=[80000160] RegSel=[0] RegAddr=[32] A=[8000015c] B=[00000008] MA=[8000015c] InstReg=[0080a703]     lw      a4, 8(ra)
+Cyc=        399 [0] PCReg=[80000160] uPC=[08] Bus=[000000f0] RegSel=[2] RegAddr=[ 1] A=[8000015c] B=[00000008] MA=[8000015c] InstReg=[0080a703]     lw      a4, 8(ra)
+Cyc=        400 [0] PCReg=[80000160] uPC=[09] Bus=[00000008] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000008] MA=[8000015c] InstReg=[0080a703]     lw      a4, 8(ra)
+Cyc=        401 [0] PCReg=[80000160] uPC=[0a] Bus=[000000f8] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000008] MA=[8000015c] InstReg=[0080a703]     lw      a4, 8(ra)
+Cyc=        402 [0] PCReg=[80000160] uPC=[0b] Bus=[00000000] RegSel=[1] RegAddr=[14] A=[000000f0] B=[00000008] MA=[000000f8] InstReg=[0080a703]  M  lw      a4, 8(ra)
+Cyc=        403 [0] PCReg=[80000160] uPC=[0c] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00000008] MA=[000000f8] InstReg=[0080a703]     lw      a4, 8(ra)
+Cyc=        404 [1] PCReg=[80000160] uPC=[00] Bus=[80000160] RegSel=[0] RegAddr=[32] A=[000000f0] B=[00000008] MA=[000000f8] InstReg=[0080a703] F   lw      a4, 8(ra)
+Cyc=        405 [0] PCReg=[80000160] uPC=[01] Bus=[00000e93] RegSel=[7] RegAddr=[ 0] A=[80000160] B=[00000008] MA=[80000160] InstReg=[0080a703]  M  lw      a4, 8(ra)
+Cyc=        406 [0] PCReg=[80000160] uPC=[02] Bus=[80000164] RegSel=[0] RegAddr=[32] A=[80000160] B=[00000008] MA=[80000160] InstReg=[00000e93]     li      t4, 0
+Cyc=        407 [0] PCReg=[80000164] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000160] B=[00000008] MA=[80000160] InstReg=[00000e93]     li      t4, 0
+Cyc=        408 [0] PCReg=[80000164] uPC=[32] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000008] MA=[80000160] InstReg=[00000e93]     li      t4, 0
+Cyc=        409 [0] PCReg=[80000164] uPC=[33] Bus=[00000000] RegSel=[1] RegAddr=[29] A=[00000000] B=[00000000] MA=[80000160] InstReg=[00000e93]     li      t4, 0
+Cyc=        410 [1] PCReg=[80000164] uPC=[00] Bus=[80000164] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000000] MA=[80000160] InstReg=[00000e93] F   li      t4, 0
+Cyc=        411 [0] PCReg=[80000164] uPC=[01] Bus=[00400193] RegSel=[7] RegAddr=[ 0] A=[80000164] B=[00000000] MA=[80000164] InstReg=[00000e93]  M  li      t4, 0
+Cyc=        412 [0] PCReg=[80000164] uPC=[02] Bus=[80000168] RegSel=[0] RegAddr=[32] A=[80000164] B=[00000000] MA=[80000164] InstReg=[00400193]     li      gp, 4
+Cyc=        413 [0] PCReg=[80000168] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000164] B=[00000000] MA=[80000164] InstReg=[00400193]     li      gp, 4
+Cyc=        414 [0] PCReg=[80000168] uPC=[32] Bus=[00000004] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[80000164] InstReg=[00400193]     li      gp, 4
+Cyc=        415 [0] PCReg=[80000168] uPC=[33] Bus=[00000004] RegSel=[1] RegAddr=[ 3] A=[00000000] B=[00000004] MA=[80000164] InstReg=[00400193]     li      gp, 4
+Cyc=        416 [1] PCReg=[80000168] uPC=[00] Bus=[80000168] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000004] MA=[80000164] InstReg=[00400193] F   li      gp, 4
+Cyc=        417 [0] PCReg=[80000168] uPC=[01] Bus=[05d71c63] RegSel=[7] RegAddr=[ 0] A=[80000168] B=[00000004] MA=[80000168] InstReg=[00400193]  M  li      gp, 4
+Cyc=        418 [0] PCReg=[80000168] uPC=[02] Bus=[8000016c] RegSel=[0] RegAddr=[32] A=[80000168] B=[00000004] MA=[80000168] InstReg=[05d71c63]     bne     a4, t4, pc + 88
+Cyc=        419 [0] PCReg=[8000016c] uPC=[7c] Bus=[00000000] RegSel=[2] RegAddr=[14] A=[80000168] B=[00000004] MA=[80000168] InstReg=[05d71c63]     bne     a4, t4, pc + 88
+Cyc=        420 [0] PCReg=[8000016c] uPC=[7d] Bus=[00000000] RegSel=[3] RegAddr=[29] A=[00000000] B=[00000004] MA=[80000168] InstReg=[05d71c63]     bne     a4, t4, pc + 88
+Cyc=        421 [0] PCReg=[8000016c] uPC=[7e] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[80000168] InstReg=[05d71c63]     bne     a4, t4, pc + 88
+Cyc=        422 [0] PCReg=[8000016c] uPC=[7f] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[80000168] InstReg=[05d71c63]     bne     a4, t4, pc + 88
+Cyc=        423 [1] PCReg=[8000016c] uPC=[00] Bus=[8000016c] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000000] MA=[80000168] InstReg=[05d71c63] F   bne     a4, t4, pc + 88
+Cyc=        424 [0] PCReg=[8000016c] uPC=[01] Bus=[0f000093] RegSel=[7] RegAddr=[ 0] A=[8000016c] B=[00000000] MA=[8000016c] InstReg=[05d71c63]  M  bne     a4, t4, pc + 88
+Cyc=        425 [0] PCReg=[8000016c] uPC=[02] Bus=[80000170] RegSel=[0] RegAddr=[32] A=[8000016c] B=[00000000] MA=[8000016c] InstReg=[0f000093]     li      ra, 240
+Cyc=        426 [0] PCReg=[80000170] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[8000016c] B=[00000000] MA=[8000016c] InstReg=[0f000093]     li      ra, 240
+Cyc=        427 [0] PCReg=[80000170] uPC=[32] Bus=[000000f0] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[8000016c] InstReg=[0f000093]     li      ra, 240
+Cyc=        428 [0] PCReg=[80000170] uPC=[33] Bus=[000000f0] RegSel=[1] RegAddr=[ 1] A=[00000000] B=[000000f0] MA=[8000016c] InstReg=[0f000093]     li      ra, 240
+Cyc=        429 [1] PCReg=[80000170] uPC=[00] Bus=[80000170] RegSel=[0] RegAddr=[32] A=[00000000] B=[000000f0] MA=[8000016c] InstReg=[0f000093] F   li      ra, 240
+Cyc=        430 [0] PCReg=[80000170] uPC=[01] Bus=[000f0137] RegSel=[7] RegAddr=[ 0] A=[80000170] B=[000000f0] MA=[80000170] InstReg=[0f000093]  M  li      ra, 240
+Cyc=        431 [0] PCReg=[80000170] uPC=[02] Bus=[80000174] RegSel=[0] RegAddr=[32] A=[80000170] B=[000000f0] MA=[80000170] InstReg=[000f0137]     lui     sp, 0xf0
+Cyc=        432 [0] PCReg=[80000174] uPC=[30] Bus=[000f0000] RegSel=[1] RegAddr=[ 2] A=[80000170] B=[000000f0] MA=[80000170] InstReg=[000f0137]     lui     sp, 0xf0
+Cyc=        433 [1] PCReg=[80000174] uPC=[00] Bus=[80000174] RegSel=[0] RegAddr=[32] A=[80000170] B=[000000f0] MA=[80000170] InstReg=[000f0137] F   lui     sp, 0xf0
+Cyc=        434 [0] PCReg=[80000174] uPC=[01] Bus=[00008157] RegSel=[7] RegAddr=[ 0] A=[80000174] B=[000000f0] MA=[80000174] InstReg=[000f0137]  M  lui     sp, 0xf0
+
+
+
+
+
+
+Cyc=        435 [0] PCReg=[80000174] uPC=[02] Bus=[80000178] RegSel=[0] RegAddr=[32] A=[80000174] B=[000000f0] MA=[80000174] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        436 [0] PCReg=[80000178] uPC=[be] Bus=[000000f0] RegSel=[2] RegAddr=[ 1] A=[80000174] B=[000000f0] MA=[80000174] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        437 [0] PCReg=[80000178] uPC=[bf] Bus=[00aa00aa] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[000000f0] MA=[000000f0] InstReg=[00008157]  M  vadd.vv v2, v0, v1, v0.t
+Cyc=        438 [0] PCReg=[80000178] uPC=[c0] Bus=[000f0000] RegSel=[1] RegAddr=[ 2] A=[000000f0] B=[00aa00aa] MA=[000000f0] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        439 [0] PCReg=[80000178] uPC=[c1] Bus=[00aa00aa] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00aa00aa] MA=[000f0000] InstReg=[00008157]  M  vadd.vv v2, v0, v1, v0.t
+Cyc=        440 [0] PCReg=[80000178] uPC=[c2] Bus=[00aa00aa] RegSel=[7] RegAddr=[ 0] A=[000000f0] B=[00aa00aa] MA=[000f0000] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        441 [0] PCReg=[80000178] uPC=[c3] Bus=[000000f4] RegSel=[2] RegAddr=[ 1] A=[000000f0] B=[00aa00aa] MA=[000f0000] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        442 [0] PCReg=[80000178] uPC=[c4] Bus=[000f0000] RegSel=[1] RegAddr=[ 2] A=[000000f0] B=[00aa00aa] MA=[000f0000] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        443 [0] PCReg=[80000178] uPC=[c5] Bus=[000f0004] RegSel=[1] RegAddr=[ 2] A=[000f0000] B=[00aa00aa] MA=[000f0000] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        444 [0] PCReg=[80000178] uPC=[be] Bus=[000000f4] RegSel=[2] RegAddr=[ 1] A=[000f0000] B=[00aa00aa] MA=[000f0000] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        445 [0] PCReg=[80000178] uPC=[bf] Bus=[aa00aa00] RegSel=[7] RegAddr=[ 0] A=[000000f4] B=[00aa00aa] MA=[000000f4] InstReg=[00008157]  M  vadd.vv v2, v0, v1, v0.t
+Cyc=        446 [0] PCReg=[80000178] uPC=[c0] Bus=[000f0004] RegSel=[1] RegAddr=[ 2] A=[000000f4] B=[aa00aa00] MA=[000000f4] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        447 [0] PCReg=[80000178] uPC=[c1] Bus=[aa00aa00] RegSel=[7] RegAddr=[ 0] A=[000000f4] B=[aa00aa00] MA=[000f0004] InstReg=[00008157]  M  vadd.vv v2, v0, v1, v0.t
+Cyc=        448 [0] PCReg=[80000178] uPC=[c2] Bus=[aa00aa00] RegSel=[7] RegAddr=[ 0] A=[000000f4] B=[aa00aa00] MA=[000f0004] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        449 [0] PCReg=[80000178] uPC=[c3] Bus=[000000f8] RegSel=[2] RegAddr=[ 1] A=[000000f4] B=[aa00aa00] MA=[000f0004] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        450 [0] PCReg=[80000178] uPC=[c4] Bus=[000f0004] RegSel=[1] RegAddr=[ 2] A=[000000f4] B=[aa00aa00] MA=[000f0004] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        451 [0] PCReg=[80000178] uPC=[c5] Bus=[000f0008] RegSel=[1] RegAddr=[ 2] A=[000f0004] B=[aa00aa00] MA=[000f0004] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        452 [0] PCReg=[80000178] uPC=[be] Bus=[000000f8] RegSel=[2] RegAddr=[ 1] A=[000f0004] B=[aa00aa00] MA=[000f0004] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        453 [0] PCReg=[80000178] uPC=[bf] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f8] B=[aa00aa00] MA=[000000f8] InstReg=[00008157]  M  vadd.vv v2, v0, v1, v0.t
+Cyc=        454 [0] PCReg=[80000178] uPC=[c0] Bus=[000f0008] RegSel=[1] RegAddr=[ 2] A=[000000f8] B=[00000000] MA=[000000f8] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        455 [0] PCReg=[80000178] uPC=[c1] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f8] B=[00000000] MA=[000f0008] InstReg=[00008157]  M  vadd.vv v2, v0, v1, v0.t
+Cyc=        456 [0] PCReg=[80000178] uPC=[c2] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000000f8] B=[00000000] MA=[000f0008] InstReg=[00008157]     vadd.vv v2, v0, v1, v0.t
+Cyc=        457 [1] PCReg=[80000178] uPC=[00] Bus=[80000178] RegSel=[0] RegAddr=[32] A=[000000f8] B=[00000000] MA=[000f0008] InstReg=[00008157] F   vadd.vv v2, v0, v1, v0.t
+Cyc=        458 [0] PCReg=[80000178] uPC=[01] Bus=[000f00b7] RegSel=[7] RegAddr=[ 0] A=[80000178] B=[00000000] MA=[80000178] InstReg=[00008157]  M  vadd.vv v2, v0, v1, v0.t
+
+
+
+
+
+
+Cyc=        459 [0] PCReg=[80000178] uPC=[02] Bus=[8000017c] RegSel=[0] RegAddr=[32] A=[80000178] B=[00000000] MA=[80000178] InstReg=[000f00b7]     lui     ra, 0xf0
+Cyc=        460 [0] PCReg=[8000017c] uPC=[30] Bus=[000f0000] RegSel=[1] RegAddr=[ 1] A=[80000178] B=[00000000] MA=[80000178] InstReg=[000f00b7]     lui     ra, 0xf0
+Cyc=        461 [1] PCReg=[8000017c] uPC=[00] Bus=[8000017c] RegSel=[0] RegAddr=[32] A=[80000178] B=[00000000] MA=[80000178] InstReg=[000f00b7] F   lui     ra, 0xf0
+Cyc=        462 [0] PCReg=[8000017c] uPC=[01] Bus=[0000a703] RegSel=[7] RegAddr=[ 0] A=[8000017c] B=[00000000] MA=[8000017c] InstReg=[000f00b7]  M  lui     ra, 0xf0
+Cyc=        463 [0] PCReg=[8000017c] uPC=[02] Bus=[80000180] RegSel=[0] RegAddr=[32] A=[8000017c] B=[00000000] MA=[8000017c] InstReg=[0000a703]     lw      a4, 0(ra)
+Cyc=        464 [0] PCReg=[80000180] uPC=[08] Bus=[000f0000] RegSel=[2] RegAddr=[ 1] A=[8000017c] B=[00000000] MA=[8000017c] InstReg=[0000a703]     lw      a4, 0(ra)
+Cyc=        465 [0] PCReg=[80000180] uPC=[09] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000f0000] B=[00000000] MA=[8000017c] InstReg=[0000a703]     lw      a4, 0(ra)
+Cyc=        466 [0] PCReg=[80000180] uPC=[0a] Bus=[000f0000] RegSel=[7] RegAddr=[ 0] A=[000f0000] B=[00000000] MA=[8000017c] InstReg=[0000a703]     lw      a4, 0(ra)
+Cyc=        467 [0] PCReg=[80000180] uPC=[0b] Bus=[00aa00aa] RegSel=[1] RegAddr=[14] A=[000f0000] B=[00000000] MA=[000f0000] InstReg=[0000a703]  M  lw      a4, 0(ra)
+Cyc=        468 [0] PCReg=[80000180] uPC=[0c] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000f0000] B=[00000000] MA=[000f0000] InstReg=[0000a703]     lw      a4, 0(ra)
+Cyc=        469 [1] PCReg=[80000180] uPC=[00] Bus=[80000180] RegSel=[0] RegAddr=[32] A=[000f0000] B=[00000000] MA=[000f0000] InstReg=[0000a703] F   lw      a4, 0(ra)
+Cyc=        470 [0] PCReg=[80000180] uPC=[01] Bus=[00aa0eb7] RegSel=[7] RegAddr=[ 0] A=[80000180] B=[00000000] MA=[80000180] InstReg=[0000a703]  M  lw      a4, 0(ra)
+Cyc=        471 [0] PCReg=[80000180] uPC=[02] Bus=[80000184] RegSel=[0] RegAddr=[32] A=[80000180] B=[00000000] MA=[80000180] InstReg=[00aa0eb7]     lui     t4, 0xaa0
+Cyc=        472 [0] PCReg=[80000184] uPC=[30] Bus=[00aa0000] RegSel=[1] RegAddr=[29] A=[80000180] B=[00000000] MA=[80000180] InstReg=[00aa0eb7]     lui     t4, 0xaa0
+Cyc=        473 [1] PCReg=[80000184] uPC=[00] Bus=[80000184] RegSel=[0] RegAddr=[32] A=[80000180] B=[00000000] MA=[80000180] InstReg=[00aa0eb7] F   lui     t4, 0xaa0
+Cyc=        474 [0] PCReg=[80000184] uPC=[01] Bus=[0aae8e93] RegSel=[7] RegAddr=[ 0] A=[80000184] B=[00000000] MA=[80000184] InstReg=[00aa0eb7]  M  lui     t4, 0xaa0
+Cyc=        475 [0] PCReg=[80000184] uPC=[02] Bus=[80000188] RegSel=[0] RegAddr=[32] A=[80000184] B=[00000000] MA=[80000184] InstReg=[0aae8e93]     addi    t4, t4, 170
+Cyc=        476 [0] PCReg=[80000188] uPC=[31] Bus=[00aa0000] RegSel=[2] RegAddr=[29] A=[80000184] B=[00000000] MA=[80000184] InstReg=[0aae8e93]     addi    t4, t4, 170
+Cyc=        477 [0] PCReg=[80000188] uPC=[32] Bus=[000000aa] RegSel=[7] RegAddr=[ 0] A=[00aa0000] B=[00000000] MA=[80000184] InstReg=[0aae8e93]     addi    t4, t4, 170
+Cyc=        478 [0] PCReg=[80000188] uPC=[33] Bus=[00aa00aa] RegSel=[1] RegAddr=[29] A=[00aa0000] B=[000000aa] MA=[80000184] InstReg=[0aae8e93]     addi    t4, t4, 170
+Cyc=        479 [1] PCReg=[80000188] uPC=[00] Bus=[80000188] RegSel=[0] RegAddr=[32] A=[00aa0000] B=[000000aa] MA=[80000184] InstReg=[0aae8e93] F   addi    t4, t4, 170
+Cyc=        480 [0] PCReg=[80000188] uPC=[01] Bus=[00500193] RegSel=[7] RegAddr=[ 0] A=[80000188] B=[000000aa] MA=[80000188] InstReg=[0aae8e93]  M  addi    t4, t4, 170
+Cyc=        481 [0] PCReg=[80000188] uPC=[02] Bus=[8000018c] RegSel=[0] RegAddr=[32] A=[80000188] B=[000000aa] MA=[80000188] InstReg=[00500193]     li      gp, 5
+Cyc=        482 [0] PCReg=[8000018c] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000188] B=[000000aa] MA=[80000188] InstReg=[00500193]     li      gp, 5
+Cyc=        483 [0] PCReg=[8000018c] uPC=[32] Bus=[00000005] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[000000aa] MA=[80000188] InstReg=[00500193]     li      gp, 5
+Cyc=        484 [0] PCReg=[8000018c] uPC=[33] Bus=[00000005] RegSel=[1] RegAddr=[ 3] A=[00000000] B=[00000005] MA=[80000188] InstReg=[00500193]     li      gp, 5
+Cyc=        485 [1] PCReg=[8000018c] uPC=[00] Bus=[8000018c] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000005] MA=[80000188] InstReg=[00500193] F   li      gp, 5
+Cyc=        486 [0] PCReg=[8000018c] uPC=[01] Bus=[03d71a63] RegSel=[7] RegAddr=[ 0] A=[8000018c] B=[00000005] MA=[8000018c] InstReg=[00500193]  M  li      gp, 5
+Cyc=        487 [0] PCReg=[8000018c] uPC=[02] Bus=[80000190] RegSel=[0] RegAddr=[32] A=[8000018c] B=[00000005] MA=[8000018c] InstReg=[03d71a63]     bne     a4, t4, pc + 52
+Cyc=        488 [0] PCReg=[80000190] uPC=[7c] Bus=[00aa00aa] RegSel=[2] RegAddr=[14] A=[8000018c] B=[00000005] MA=[8000018c] InstReg=[03d71a63]     bne     a4, t4, pc + 52
+Cyc=        489 [0] PCReg=[80000190] uPC=[7d] Bus=[00aa00aa] RegSel=[3] RegAddr=[29] A=[00aa00aa] B=[00000005] MA=[8000018c] InstReg=[03d71a63]     bne     a4, t4, pc + 52
+Cyc=        490 [0] PCReg=[80000190] uPC=[7e] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00aa00aa] B=[00aa00aa] MA=[8000018c] InstReg=[03d71a63]     bne     a4, t4, pc + 52
+Cyc=        491 [0] PCReg=[80000190] uPC=[7f] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00aa00aa] B=[00aa00aa] MA=[8000018c] InstReg=[03d71a63]     bne     a4, t4, pc + 52
+Cyc=        492 [1] PCReg=[80000190] uPC=[00] Bus=[80000190] RegSel=[0] RegAddr=[32] A=[00aa00aa] B=[00aa00aa] MA=[8000018c] InstReg=[03d71a63] F   bne     a4, t4, pc + 52
+Cyc=        493 [0] PCReg=[80000190] uPC=[01] Bus=[000f00b7] RegSel=[7] RegAddr=[ 0] A=[80000190] B=[00aa00aa] MA=[80000190] InstReg=[03d71a63]  M  bne     a4, t4, pc + 52
+Cyc=        494 [0] PCReg=[80000190] uPC=[02] Bus=[80000194] RegSel=[0] RegAddr=[32] A=[80000190] B=[00aa00aa] MA=[80000190] InstReg=[000f00b7]     lui     ra, 0xf0
+Cyc=        495 [0] PCReg=[80000194] uPC=[30] Bus=[000f0000] RegSel=[1] RegAddr=[ 1] A=[80000190] B=[00aa00aa] MA=[80000190] InstReg=[000f00b7]     lui     ra, 0xf0
+Cyc=        496 [1] PCReg=[80000194] uPC=[00] Bus=[80000194] RegSel=[0] RegAddr=[32] A=[80000190] B=[00aa00aa] MA=[80000190] InstReg=[000f00b7] F   lui     ra, 0xf0
+Cyc=        497 [0] PCReg=[80000194] uPC=[01] Bus=[0040a703] RegSel=[7] RegAddr=[ 0] A=[80000194] B=[00aa00aa] MA=[80000194] InstReg=[000f00b7]  M  lui     ra, 0xf0
+Cyc=        498 [0] PCReg=[80000194] uPC=[02] Bus=[80000198] RegSel=[0] RegAddr=[32] A=[80000194] B=[00aa00aa] MA=[80000194] InstReg=[0040a703]     lw      a4, 4(ra)
+Cyc=        499 [0] PCReg=[80000198] uPC=[08] Bus=[000f0000] RegSel=[2] RegAddr=[ 1] A=[80000194] B=[00aa00aa] MA=[80000194] InstReg=[0040a703]     lw      a4, 4(ra)
+Cyc=        500 [0] PCReg=[80000198] uPC=[09] Bus=[00000004] RegSel=[7] RegAddr=[ 0] A=[000f0000] B=[00aa00aa] MA=[80000194] InstReg=[0040a703]     lw      a4, 4(ra)
+Cyc=        501 [0] PCReg=[80000198] uPC=[0a] Bus=[000f0004] RegSel=[7] RegAddr=[ 0] A=[000f0000] B=[00000004] MA=[80000194] InstReg=[0040a703]     lw      a4, 4(ra)
+Cyc=        502 [0] PCReg=[80000198] uPC=[0b] Bus=[aa00aa00] RegSel=[1] RegAddr=[14] A=[000f0000] B=[00000004] MA=[000f0004] InstReg=[0040a703]  M  lw      a4, 4(ra)
+Cyc=        503 [0] PCReg=[80000198] uPC=[0c] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000f0000] B=[00000004] MA=[000f0004] InstReg=[0040a703]     lw      a4, 4(ra)
+Cyc=        504 [1] PCReg=[80000198] uPC=[00] Bus=[80000198] RegSel=[0] RegAddr=[32] A=[000f0000] B=[00000004] MA=[000f0004] InstReg=[0040a703] F   lw      a4, 4(ra)
+Cyc=        505 [0] PCReg=[80000198] uPC=[01] Bus=[aa00beb7] RegSel=[7] RegAddr=[ 0] A=[80000198] B=[00000004] MA=[80000198] InstReg=[0040a703]  M  lw      a4, 4(ra)
+Cyc=        506 [0] PCReg=[80000198] uPC=[02] Bus=[8000019c] RegSel=[0] RegAddr=[32] A=[80000198] B=[00000004] MA=[80000198] InstReg=[aa00beb7]     lui     t4, 0xaa00b
+Cyc=        507 [0] PCReg=[8000019c] uPC=[30] Bus=[aa00b000] RegSel=[1] RegAddr=[29] A=[80000198] B=[00000004] MA=[80000198] InstReg=[aa00beb7]     lui     t4, 0xaa00b
+Cyc=        508 [1] PCReg=[8000019c] uPC=[00] Bus=[8000019c] RegSel=[0] RegAddr=[32] A=[80000198] B=[00000004] MA=[80000198] InstReg=[aa00beb7] F   lui     t4, 0xaa00b
+Cyc=        509 [0] PCReg=[8000019c] uPC=[01] Bus=[a00e8e93] RegSel=[7] RegAddr=[ 0] A=[8000019c] B=[00000004] MA=[8000019c] InstReg=[aa00beb7]  M  lui     t4, 0xaa00b
+Cyc=        510 [0] PCReg=[8000019c] uPC=[02] Bus=[800001a0] RegSel=[0] RegAddr=[32] A=[8000019c] B=[00000004] MA=[8000019c] InstReg=[a00e8e93]     addi    t4, t4, -1536
+Cyc=        511 [0] PCReg=[800001a0] uPC=[31] Bus=[aa00b000] RegSel=[2] RegAddr=[29] A=[8000019c] B=[00000004] MA=[8000019c] InstReg=[a00e8e93]     addi    t4, t4, -1536
+Cyc=        512 [0] PCReg=[800001a0] uPC=[32] Bus=[fffffa00] RegSel=[7] RegAddr=[ 0] A=[aa00b000] B=[00000004] MA=[8000019c] InstReg=[a00e8e93]     addi    t4, t4, -1536
+Cyc=        513 [0] PCReg=[800001a0] uPC=[33] Bus=[aa00aa00] RegSel=[1] RegAddr=[29] A=[aa00b000] B=[fffffa00] MA=[8000019c] InstReg=[a00e8e93]     addi    t4, t4, -1536
+Cyc=        514 [1] PCReg=[800001a0] uPC=[00] Bus=[800001a0] RegSel=[0] RegAddr=[32] A=[aa00b000] B=[fffffa00] MA=[8000019c] InstReg=[a00e8e93] F   addi    t4, t4, -1536
+Cyc=        515 [0] PCReg=[800001a0] uPC=[01] Bus=[00600193] RegSel=[7] RegAddr=[ 0] A=[800001a0] B=[fffffa00] MA=[800001a0] InstReg=[a00e8e93]  M  addi    t4, t4, -1536
+Cyc=        516 [0] PCReg=[800001a0] uPC=[02] Bus=[800001a4] RegSel=[0] RegAddr=[32] A=[800001a0] B=[fffffa00] MA=[800001a0] InstReg=[00600193]     li      gp, 6
+Cyc=        517 [0] PCReg=[800001a4] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[800001a0] B=[fffffa00] MA=[800001a0] InstReg=[00600193]     li      gp, 6
+Cyc=        518 [0] PCReg=[800001a4] uPC=[32] Bus=[00000006] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[fffffa00] MA=[800001a0] InstReg=[00600193]     li      gp, 6
+Cyc=        519 [0] PCReg=[800001a4] uPC=[33] Bus=[00000006] RegSel=[1] RegAddr=[ 3] A=[00000000] B=[00000006] MA=[800001a0] InstReg=[00600193]     li      gp, 6
+Cyc=        520 [1] PCReg=[800001a4] uPC=[00] Bus=[800001a4] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000006] MA=[800001a0] InstReg=[00600193] F   li      gp, 6
+Cyc=        521 [0] PCReg=[800001a4] uPC=[01] Bus=[01d71e63] RegSel=[7] RegAddr=[ 0] A=[800001a4] B=[00000006] MA=[800001a4] InstReg=[00600193]  M  li      gp, 6
+Cyc=        522 [0] PCReg=[800001a4] uPC=[02] Bus=[800001a8] RegSel=[0] RegAddr=[32] A=[800001a4] B=[00000006] MA=[800001a4] InstReg=[01d71e63]     bne     a4, t4, pc + 28
+Cyc=        523 [0] PCReg=[800001a8] uPC=[7c] Bus=[aa00aa00] RegSel=[2] RegAddr=[14] A=[800001a4] B=[00000006] MA=[800001a4] InstReg=[01d71e63]     bne     a4, t4, pc + 28
+Cyc=        524 [0] PCReg=[800001a8] uPC=[7d] Bus=[aa00aa00] RegSel=[3] RegAddr=[29] A=[aa00aa00] B=[00000006] MA=[800001a4] InstReg=[01d71e63]     bne     a4, t4, pc + 28
+Cyc=        525 [0] PCReg=[800001a8] uPC=[7e] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[aa00aa00] B=[aa00aa00] MA=[800001a4] InstReg=[01d71e63]     bne     a4, t4, pc + 28
+Cyc=        526 [0] PCReg=[800001a8] uPC=[7f] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[aa00aa00] B=[aa00aa00] MA=[800001a4] InstReg=[01d71e63]     bne     a4, t4, pc + 28
+Cyc=        527 [1] PCReg=[800001a8] uPC=[00] Bus=[800001a8] RegSel=[0] RegAddr=[32] A=[aa00aa00] B=[aa00aa00] MA=[800001a4] InstReg=[01d71e63] F   bne     a4, t4, pc + 28
+Cyc=        528 [0] PCReg=[800001a8] uPC=[01] Bus=[000f00b7] RegSel=[7] RegAddr=[ 0] A=[800001a8] B=[aa00aa00] MA=[800001a8] InstReg=[01d71e63]  M  bne     a4, t4, pc + 28
+Cyc=        529 [0] PCReg=[800001a8] uPC=[02] Bus=[800001ac] RegSel=[0] RegAddr=[32] A=[800001a8] B=[aa00aa00] MA=[800001a8] InstReg=[000f00b7]     lui     ra, 0xf0
+Cyc=        530 [0] PCReg=[800001ac] uPC=[30] Bus=[000f0000] RegSel=[1] RegAddr=[ 1] A=[800001a8] B=[aa00aa00] MA=[800001a8] InstReg=[000f00b7]     lui     ra, 0xf0
+Cyc=        531 [1] PCReg=[800001ac] uPC=[00] Bus=[800001ac] RegSel=[0] RegAddr=[32] A=[800001a8] B=[aa00aa00] MA=[800001a8] InstReg=[000f00b7] F   lui     ra, 0xf0
+Cyc=        532 [0] PCReg=[800001ac] uPC=[01] Bus=[0080a703] RegSel=[7] RegAddr=[ 0] A=[800001ac] B=[aa00aa00] MA=[800001ac] InstReg=[000f00b7]  M  lui     ra, 0xf0
+Cyc=        533 [0] PCReg=[800001ac] uPC=[02] Bus=[800001b0] RegSel=[0] RegAddr=[32] A=[800001ac] B=[aa00aa00] MA=[800001ac] InstReg=[0080a703]     lw      a4, 8(ra)
+Cyc=        534 [0] PCReg=[800001b0] uPC=[08] Bus=[000f0000] RegSel=[2] RegAddr=[ 1] A=[800001ac] B=[aa00aa00] MA=[800001ac] InstReg=[0080a703]     lw      a4, 8(ra)
+Cyc=        535 [0] PCReg=[800001b0] uPC=[09] Bus=[00000008] RegSel=[7] RegAddr=[ 0] A=[000f0000] B=[aa00aa00] MA=[800001ac] InstReg=[0080a703]     lw      a4, 8(ra)
+Cyc=        536 [0] PCReg=[800001b0] uPC=[0a] Bus=[000f0008] RegSel=[7] RegAddr=[ 0] A=[000f0000] B=[00000008] MA=[800001ac] InstReg=[0080a703]     lw      a4, 8(ra)
+Cyc=        537 [0] PCReg=[800001b0] uPC=[0b] Bus=[00000000] RegSel=[1] RegAddr=[14] A=[000f0000] B=[00000008] MA=[000f0008] InstReg=[0080a703]  M  lw      a4, 8(ra)
+Cyc=        538 [0] PCReg=[800001b0] uPC=[0c] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[000f0000] B=[00000008] MA=[000f0008] InstReg=[0080a703]     lw      a4, 8(ra)
+Cyc=        539 [1] PCReg=[800001b0] uPC=[00] Bus=[800001b0] RegSel=[0] RegAddr=[32] A=[000f0000] B=[00000008] MA=[000f0008] InstReg=[0080a703] F   lw      a4, 8(ra)
+Cyc=        540 [0] PCReg=[800001b0] uPC=[01] Bus=[00000e93] RegSel=[7] RegAddr=[ 0] A=[800001b0] B=[00000008] MA=[800001b0] InstReg=[0080a703]  M  lw      a4, 8(ra)
+Cyc=        541 [0] PCReg=[800001b0] uPC=[02] Bus=[800001b4] RegSel=[0] RegAddr=[32] A=[800001b0] B=[00000008] MA=[800001b0] InstReg=[00000e93]     li      t4, 0
+Cyc=        542 [0] PCReg=[800001b4] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[800001b0] B=[00000008] MA=[800001b0] InstReg=[00000e93]     li      t4, 0
+Cyc=        543 [0] PCReg=[800001b4] uPC=[32] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000008] MA=[800001b0] InstReg=[00000e93]     li      t4, 0
+Cyc=        544 [0] PCReg=[800001b4] uPC=[33] Bus=[00000000] RegSel=[1] RegAddr=[29] A=[00000000] B=[00000000] MA=[800001b0] InstReg=[00000e93]     li      t4, 0
+Cyc=        545 [1] PCReg=[800001b4] uPC=[00] Bus=[800001b4] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000000] MA=[800001b0] InstReg=[00000e93] F   li      t4, 0
+Cyc=        546 [0] PCReg=[800001b4] uPC=[01] Bus=[00700193] RegSel=[7] RegAddr=[ 0] A=[800001b4] B=[00000000] MA=[800001b4] InstReg=[00000e93]  M  li      t4, 0
+Cyc=        547 [0] PCReg=[800001b4] uPC=[02] Bus=[800001b8] RegSel=[0] RegAddr=[32] A=[800001b4] B=[00000000] MA=[800001b4] InstReg=[00700193]     li      gp, 7
+Cyc=        548 [0] PCReg=[800001b8] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[800001b4] B=[00000000] MA=[800001b4] InstReg=[00700193]     li      gp, 7
+Cyc=        549 [0] PCReg=[800001b8] uPC=[32] Bus=[00000007] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[800001b4] InstReg=[00700193]     li      gp, 7
+Cyc=        550 [0] PCReg=[800001b8] uPC=[33] Bus=[00000007] RegSel=[1] RegAddr=[ 3] A=[00000000] B=[00000007] MA=[800001b4] InstReg=[00700193]     li      gp, 7
+Cyc=        551 [1] PCReg=[800001b8] uPC=[00] Bus=[800001b8] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000007] MA=[800001b4] InstReg=[00700193] F   li      gp, 7
+Cyc=        552 [0] PCReg=[800001b8] uPC=[01] Bus=[01d71463] RegSel=[7] RegAddr=[ 0] A=[800001b8] B=[00000007] MA=[800001b8] InstReg=[00700193]  M  li      gp, 7
+Cyc=        553 [0] PCReg=[800001b8] uPC=[02] Bus=[800001bc] RegSel=[0] RegAddr=[32] A=[800001b8] B=[00000007] MA=[800001b8] InstReg=[01d71463]     bne     a4, t4, pc + 8
+Cyc=        554 [0] PCReg=[800001bc] uPC=[7c] Bus=[00000000] RegSel=[2] RegAddr=[14] A=[800001b8] B=[00000007] MA=[800001b8] InstReg=[01d71463]     bne     a4, t4, pc + 8
+Cyc=        555 [0] PCReg=[800001bc] uPC=[7d] Bus=[00000000] RegSel=[3] RegAddr=[29] A=[00000000] B=[00000007] MA=[800001b8] InstReg=[01d71463]     bne     a4, t4, pc + 8
+Cyc=        556 [0] PCReg=[800001bc] uPC=[7e] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[800001b8] InstReg=[01d71463]     bne     a4, t4, pc + 8
+Cyc=        557 [0] PCReg=[800001bc] uPC=[7f] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[800001b8] InstReg=[01d71463]     bne     a4, t4, pc + 8
+Cyc=        558 [1] PCReg=[800001bc] uPC=[00] Bus=[800001bc] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000000] MA=[800001b8] InstReg=[01d71463] F   bne     a4, t4, pc + 8
+Cyc=        559 [0] PCReg=[800001bc] uPC=[01] Bus=[02301063] RegSel=[7] RegAddr=[ 0] A=[800001bc] B=[00000000] MA=[800001bc] InstReg=[01d71463]  M  bne     a4, t4, pc + 8
+Cyc=        560 [0] PCReg=[800001bc] uPC=[02] Bus=[800001c0] RegSel=[0] RegAddr=[32] A=[800001bc] B=[00000000] MA=[800001bc] InstReg=[02301063]     bne     zero, gp, pc + 32
+Cyc=        561 [0] PCReg=[800001c0] uPC=[7c] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[800001bc] B=[00000000] MA=[800001bc] InstReg=[02301063]     bne     zero, gp, pc + 32
+Cyc=        562 [0] PCReg=[800001c0] uPC=[7d] Bus=[00000007] RegSel=[3] RegAddr=[ 3] A=[00000000] B=[00000000] MA=[800001bc] InstReg=[02301063]     bne     zero, gp, pc + 32
+Cyc=        563 [0] PCReg=[800001c0] uPC=[7e] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000007] MA=[800001bc] InstReg=[02301063]     bne     zero, gp, pc + 32
+Cyc=        564 [0] PCReg=[800001c0] uPC=[94] Bus=[800001c0] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000007] MA=[800001bc] InstReg=[02301063]     bne     zero, gp, pc + 32
+Cyc=        565 [0] PCReg=[800001c0] uPC=[95] Bus=[800001bc] RegSel=[7] RegAddr=[ 0] A=[800001c0] B=[00000007] MA=[800001bc] InstReg=[02301063]     bne     zero, gp, pc + 32
+Cyc=        566 [0] PCReg=[800001c0] uPC=[96] Bus=[00000020] RegSel=[7] RegAddr=[ 0] A=[800001bc] B=[00000007] MA=[800001bc] InstReg=[02301063]     bne     zero, gp, pc + 32
+Cyc=        567 [0] PCReg=[800001c0] uPC=[97] Bus=[800001dc] RegSel=[0] RegAddr=[32] A=[800001bc] B=[00000020] MA=[800001bc] InstReg=[02301063]     bne     zero, gp, pc + 32
+Cyc=        568 [1] PCReg=[800001dc] uPC=[00] Bus=[800001dc] RegSel=[0] RegAddr=[32] A=[800001bc] B=[00000020] MA=[800001bc] InstReg=[02301063] F   bne     zero, gp, pc + 32
+Cyc=        569 [0] PCReg=[800001dc] uPC=[01] Bus=[0ff0000f] RegSel=[7] RegAddr=[ 0] A=[800001dc] B=[00000020] MA=[800001dc] InstReg=[02301063]  M  bne     zero, gp, pc + 32
+Cyc=        570 [0] PCReg=[800001dc] uPC=[02] Bus=[800001e0] RegSel=[0] RegAddr=[32] A=[800001dc] B=[00000020] MA=[800001dc] InstReg=[0ff0000f]     fence
+Cyc=        571 [0] PCReg=[800001e0] uPC=[98] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[800001dc] B=[00000020] MA=[800001dc] InstReg=[0ff0000f]     fence
+Cyc=        572 [1] PCReg=[800001e0] uPC=[00] Bus=[800001e0] RegSel=[0] RegAddr=[32] A=[800001dc] B=[00000020] MA=[800001dc] InstReg=[0ff0000f] F   fence
+Cyc=        573 [0] PCReg=[800001e0] uPC=[01] Bus=[00100193] RegSel=[7] RegAddr=[ 0] A=[800001e0] B=[00000020] MA=[800001e0] InstReg=[0ff0000f]  M  fence
+Cyc=        574 [0] PCReg=[800001e0] uPC=[02] Bus=[800001e4] RegSel=[0] RegAddr=[32] A=[800001e0] B=[00000020] MA=[800001e0] InstReg=[00100193]     li      gp, 1
+Cyc=        575 [0] PCReg=[800001e4] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[800001e0] B=[00000020] MA=[800001e0] InstReg=[00100193]     li      gp, 1
+Cyc=        576 [0] PCReg=[800001e4] uPC=[32] Bus=[00000001] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000020] MA=[800001e0] InstReg=[00100193]     li      gp, 1
+Cyc=        577 [0] PCReg=[800001e4] uPC=[33] Bus=[00000001] RegSel=[1] RegAddr=[ 3] A=[00000000] B=[00000001] MA=[800001e0] InstReg=[00100193]     li      gp, 1
+Cyc=        578 [1] PCReg=[800001e4] uPC=[00] Bus=[800001e4] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000001] MA=[800001e0] InstReg=[00100193] F   li      gp, 1
+Cyc=        579 [0] PCReg=[800001e4] uPC=[01] Bus=[05d00893] RegSel=[7] RegAddr=[ 0] A=[800001e4] B=[00000001] MA=[800001e4] InstReg=[00100193]  M  li      gp, 1
+Cyc=        580 [0] PCReg=[800001e4] uPC=[02] Bus=[800001e8] RegSel=[0] RegAddr=[32] A=[800001e4] B=[00000001] MA=[800001e4] InstReg=[05d00893]     li      a7, 93
+Cyc=        581 [0] PCReg=[800001e8] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[800001e4] B=[00000001] MA=[800001e4] InstReg=[05d00893]     li      a7, 93
+Cyc=        582 [0] PCReg=[800001e8] uPC=[32] Bus=[0000005d] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000001] MA=[800001e4] InstReg=[05d00893]     li      a7, 93
+Cyc=        583 [0] PCReg=[800001e8] uPC=[33] Bus=[0000005d] RegSel=[1] RegAddr=[17] A=[00000000] B=[0000005d] MA=[800001e4] InstReg=[05d00893]     li      a7, 93
+Cyc=        584 [1] PCReg=[800001e8] uPC=[00] Bus=[800001e8] RegSel=[0] RegAddr=[32] A=[00000000] B=[0000005d] MA=[800001e4] InstReg=[05d00893] F   li      a7, 93
+Cyc=        585 [0] PCReg=[800001e8] uPC=[01] Bus=[00000513] RegSel=[7] RegAddr=[ 0] A=[800001e8] B=[0000005d] MA=[800001e8] InstReg=[05d00893]  M  li      a7, 93
+Cyc=        586 [0] PCReg=[800001e8] uPC=[02] Bus=[800001ec] RegSel=[0] RegAddr=[32] A=[800001e8] B=[0000005d] MA=[800001e8] InstReg=[00000513]     li      a0, 0
+Cyc=        587 [0] PCReg=[800001ec] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[800001e8] B=[0000005d] MA=[800001e8] InstReg=[00000513]     li      a0, 0
+Cyc=        588 [0] PCReg=[800001ec] uPC=[32] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[0000005d] MA=[800001e8] InstReg=[00000513]     li      a0, 0
+Cyc=        589 [0] PCReg=[800001ec] uPC=[33] Bus=[00000000] RegSel=[1] RegAddr=[10] A=[00000000] B=[00000000] MA=[800001e8] InstReg=[00000513]     li      a0, 0
+Cyc=        590 [1] PCReg=[800001ec] uPC=[00] Bus=[800001ec] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000000] MA=[800001e8] InstReg=[00000513] F   li      a0, 0
+Cyc=        591 [0] PCReg=[800001ec] uPC=[01] Bus=[00000073] RegSel=[7] RegAddr=[ 0] A=[800001ec] B=[00000000] MA=[800001ec] InstReg=[00000513]  M  li      a0, 0
+Cyc=        592 [0] PCReg=[800001ec] uPC=[02] Bus=[800001f0] RegSel=[0] RegAddr=[32] A=[800001ec] B=[00000000] MA=[800001ec] InstReg=[00000073]     ecall
+Cyc=        593 [0] PCReg=[800001f0] uPC=[b7] Bus=[00000000] RegSel=[5] RegAddr=[ 0] A=[800001ec] B=[00000000] MA=[800001ec] InstReg=[00000073]     ecall
+Cyc=        594 [0] PCReg=[800001f0] uPC=[b8] Bus=[80000004] RegSel=[0] RegAddr=[32] A=[800001ec] B=[00000000] MA=[800001ec] InstReg=[00000073]     ecall
+Cyc=        595 [1] PCReg=[80000004] uPC=[00] Bus=[80000004] RegSel=[0] RegAddr=[32] A=[800001ec] B=[00000000] MA=[800001ec] InstReg=[00000073] F   ecall
+Cyc=        596 [0] PCReg=[80000004] uPC=[01] Bus=[34202f73] RegSel=[7] RegAddr=[ 0] A=[80000004] B=[00000000] MA=[80000004] InstReg=[00000073]  M  ecall
+Cyc=        597 [0] PCReg=[80000004] uPC=[02] Bus=[80000008] RegSel=[0] RegAddr=[32] A=[80000004] B=[00000000] MA=[80000004] InstReg=[34202f73]     csrr    t5, mcause
+Cyc=        598 [0] PCReg=[80000008] uPC=[a3] Bus=[00000342] RegSel=[5] RegAddr=[ 0] A=[80000004] B=[00000000] MA=[80000004] InstReg=[34202f73]     csrr    t5, mcause
+Cyc=        599 [0] PCReg=[80000008] uPC=[a4] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000004] B=[00000000] MA=[80000004] InstReg=[34202f73]     csrr    t5, mcause
+Cyc=        600 [0] PCReg=[80000008] uPC=[a5] Bus=[00000000] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[80000004] InstReg=[34202f73]     csrr    t5, mcause
+Cyc=        601 [0] PCReg=[80000008] uPC=[a6] Bus=[0000000b] RegSel=[6] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[80000004] InstReg=[34202f73]     csrr    t5, mcause
+Cyc=        602 [0] PCReg=[80000008] uPC=[a7] Bus=[0000000b] RegSel=[1] RegAddr=[30] A=[0000000b] B=[00000000] MA=[80000004] InstReg=[34202f73]     csrr    t5, mcause
+Cyc=        603 [1] PCReg=[80000008] uPC=[00] Bus=[80000008] RegSel=[0] RegAddr=[32] A=[0000000b] B=[00000000] MA=[80000004] InstReg=[34202f73] F   csrr    t5, mcause
+Cyc=        604 [0] PCReg=[80000008] uPC=[01] Bus=[00800f93] RegSel=[7] RegAddr=[ 0] A=[80000008] B=[00000000] MA=[80000008] InstReg=[34202f73]  M  csrr    t5, mcause
+Cyc=        605 [0] PCReg=[80000008] uPC=[02] Bus=[8000000c] RegSel=[0] RegAddr=[32] A=[80000008] B=[00000000] MA=[80000008] InstReg=[00800f93]     li      t6, 8
+Cyc=        606 [0] PCReg=[8000000c] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000008] B=[00000000] MA=[80000008] InstReg=[00800f93]     li      t6, 8
+Cyc=        607 [0] PCReg=[8000000c] uPC=[32] Bus=[00000008] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000000] MA=[80000008] InstReg=[00800f93]     li      t6, 8
+Cyc=        608 [0] PCReg=[8000000c] uPC=[33] Bus=[00000008] RegSel=[1] RegAddr=[31] A=[00000000] B=[00000008] MA=[80000008] InstReg=[00800f93]     li      t6, 8
+Cyc=        609 [1] PCReg=[8000000c] uPC=[00] Bus=[8000000c] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000008] MA=[80000008] InstReg=[00800f93] F   li      t6, 8
+Cyc=        610 [0] PCReg=[8000000c] uPC=[01] Bus=[03ff0a63] RegSel=[7] RegAddr=[ 0] A=[8000000c] B=[00000008] MA=[8000000c] InstReg=[00800f93]  M  li      t6, 8
+Cyc=        611 [0] PCReg=[8000000c] uPC=[02] Bus=[80000010] RegSel=[0] RegAddr=[32] A=[8000000c] B=[00000008] MA=[8000000c] InstReg=[03ff0a63]     beq     t5, t6, pc + 52
+Cyc=        612 [0] PCReg=[80000010] uPC=[78] Bus=[0000000b] RegSel=[2] RegAddr=[30] A=[8000000c] B=[00000008] MA=[8000000c] InstReg=[03ff0a63]     beq     t5, t6, pc + 52
+Cyc=        613 [0] PCReg=[80000010] uPC=[79] Bus=[00000008] RegSel=[3] RegAddr=[31] A=[0000000b] B=[00000008] MA=[8000000c] InstReg=[03ff0a63]     beq     t5, t6, pc + 52
+Cyc=        614 [0] PCReg=[80000010] uPC=[7a] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[0000000b] B=[00000008] MA=[8000000c] InstReg=[03ff0a63]     beq     t5, t6, pc + 52
+Cyc=        615 [0] PCReg=[80000010] uPC=[7b] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[0000000b] B=[00000008] MA=[8000000c] InstReg=[03ff0a63]     beq     t5, t6, pc + 52
+Cyc=        616 [1] PCReg=[80000010] uPC=[00] Bus=[80000010] RegSel=[0] RegAddr=[32] A=[0000000b] B=[00000008] MA=[8000000c] InstReg=[03ff0a63] F   beq     t5, t6, pc + 52
+Cyc=        617 [0] PCReg=[80000010] uPC=[01] Bus=[00900f93] RegSel=[7] RegAddr=[ 0] A=[80000010] B=[00000008] MA=[80000010] InstReg=[03ff0a63]  M  beq     t5, t6, pc + 52
+Cyc=        618 [0] PCReg=[80000010] uPC=[02] Bus=[80000014] RegSel=[0] RegAddr=[32] A=[80000010] B=[00000008] MA=[80000010] InstReg=[00900f93]     li      t6, 9
+Cyc=        619 [0] PCReg=[80000014] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000010] B=[00000008] MA=[80000010] InstReg=[00900f93]     li      t6, 9
+Cyc=        620 [0] PCReg=[80000014] uPC=[32] Bus=[00000009] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000008] MA=[80000010] InstReg=[00900f93]     li      t6, 9
+Cyc=        621 [0] PCReg=[80000014] uPC=[33] Bus=[00000009] RegSel=[1] RegAddr=[31] A=[00000000] B=[00000009] MA=[80000010] InstReg=[00900f93]     li      t6, 9
+Cyc=        622 [1] PCReg=[80000014] uPC=[00] Bus=[80000014] RegSel=[0] RegAddr=[32] A=[00000000] B=[00000009] MA=[80000010] InstReg=[00900f93] F   li      t6, 9
+Cyc=        623 [0] PCReg=[80000014] uPC=[01] Bus=[03ff0663] RegSel=[7] RegAddr=[ 0] A=[80000014] B=[00000009] MA=[80000014] InstReg=[00900f93]  M  li      t6, 9
+Cyc=        624 [0] PCReg=[80000014] uPC=[02] Bus=[80000018] RegSel=[0] RegAddr=[32] A=[80000014] B=[00000009] MA=[80000014] InstReg=[03ff0663]     beq     t5, t6, pc + 44
+Cyc=        625 [0] PCReg=[80000018] uPC=[78] Bus=[0000000b] RegSel=[2] RegAddr=[30] A=[80000014] B=[00000009] MA=[80000014] InstReg=[03ff0663]     beq     t5, t6, pc + 44
+Cyc=        626 [0] PCReg=[80000018] uPC=[79] Bus=[00000009] RegSel=[3] RegAddr=[31] A=[0000000b] B=[00000009] MA=[80000014] InstReg=[03ff0663]     beq     t5, t6, pc + 44
+Cyc=        627 [0] PCReg=[80000018] uPC=[7a] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[0000000b] B=[00000009] MA=[80000014] InstReg=[03ff0663]     beq     t5, t6, pc + 44
+Cyc=        628 [0] PCReg=[80000018] uPC=[7b] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[0000000b] B=[00000009] MA=[80000014] InstReg=[03ff0663]     beq     t5, t6, pc + 44
+Cyc=        629 [1] PCReg=[80000018] uPC=[00] Bus=[80000018] RegSel=[0] RegAddr=[32] A=[0000000b] B=[00000009] MA=[80000014] InstReg=[03ff0663] F   beq     t5, t6, pc + 44
+Cyc=        630 [0] PCReg=[80000018] uPC=[01] Bus=[00b00f93] RegSel=[7] RegAddr=[ 0] A=[80000018] B=[00000009] MA=[80000018] InstReg=[03ff0663]  M  beq     t5, t6, pc + 44
+Cyc=        631 [0] PCReg=[80000018] uPC=[02] Bus=[8000001c] RegSel=[0] RegAddr=[32] A=[80000018] B=[00000009] MA=[80000018] InstReg=[00b00f93]     li      t6, 11
+Cyc=        632 [0] PCReg=[8000001c] uPC=[31] Bus=[00000000] RegSel=[2] RegAddr=[ 0] A=[80000018] B=[00000009] MA=[80000018] InstReg=[00b00f93]     li      t6, 11
+Cyc=        633 [0] PCReg=[8000001c] uPC=[32] Bus=[0000000b] RegSel=[7] RegAddr=[ 0] A=[00000000] B=[00000009] MA=[80000018] InstReg=[00b00f93]     li      t6, 11
+Cyc=        634 [0] PCReg=[8000001c] uPC=[33] Bus=[0000000b] RegSel=[1] RegAddr=[31] A=[00000000] B=[0000000b] MA=[80000018] InstReg=[00b00f93]     li      t6, 11
+Cyc=        635 [1] PCReg=[8000001c] uPC=[00] Bus=[8000001c] RegSel=[0] RegAddr=[32] A=[00000000] B=[0000000b] MA=[80000018] InstReg=[00b00f93] F   li      t6, 11
+Cyc=        636 [0] PCReg=[8000001c] uPC=[01] Bus=[03ff0263] RegSel=[7] RegAddr=[ 0] A=[8000001c] B=[0000000b] MA=[8000001c] InstReg=[00b00f93]  M  li      t6, 11
+Cyc=        637 [0] PCReg=[8000001c] uPC=[02] Bus=[80000020] RegSel=[0] RegAddr=[32] A=[8000001c] B=[0000000b] MA=[8000001c] InstReg=[03ff0263]     beq     t5, t6, pc + 36
+Cyc=        638 [0] PCReg=[80000020] uPC=[78] Bus=[0000000b] RegSel=[2] RegAddr=[30] A=[8000001c] B=[0000000b] MA=[8000001c] InstReg=[03ff0263]     beq     t5, t6, pc + 36
+Cyc=        639 [0] PCReg=[80000020] uPC=[79] Bus=[0000000b] RegSel=[3] RegAddr=[31] A=[0000000b] B=[0000000b] MA=[8000001c] InstReg=[03ff0263]     beq     t5, t6, pc + 36
+Cyc=        640 [0] PCReg=[80000020] uPC=[7a] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[0000000b] B=[0000000b] MA=[8000001c] InstReg=[03ff0263]     beq     t5, t6, pc + 36
+Cyc=        641 [0] PCReg=[80000020] uPC=[94] Bus=[80000020] RegSel=[0] RegAddr=[32] A=[0000000b] B=[0000000b] MA=[8000001c] InstReg=[03ff0263]     beq     t5, t6, pc + 36
+Cyc=        642 [0] PCReg=[80000020] uPC=[95] Bus=[8000001c] RegSel=[7] RegAddr=[ 0] A=[80000020] B=[0000000b] MA=[8000001c] InstReg=[03ff0263]     beq     t5, t6, pc + 36
+Cyc=        643 [0] PCReg=[80000020] uPC=[96] Bus=[00000024] RegSel=[7] RegAddr=[ 0] A=[8000001c] B=[0000000b] MA=[8000001c] InstReg=[03ff0263]     beq     t5, t6, pc + 36
+Cyc=        644 [0] PCReg=[80000020] uPC=[97] Bus=[80000040] RegSel=[0] RegAddr=[32] A=[8000001c] B=[00000024] MA=[8000001c] InstReg=[03ff0263]     beq     t5, t6, pc + 36
+Cyc=        645 [1] PCReg=[80000040] uPC=[00] Bus=[80000040] RegSel=[0] RegAddr=[32] A=[8000001c] B=[00000024] MA=[8000001c] InstReg=[03ff0263] F   beq     t5, t6, pc + 36
+Cyc=        646 [0] PCReg=[80000040] uPC=[01] Bus=[00001f17] RegSel=[7] RegAddr=[ 0] A=[80000040] B=[00000024] MA=[80000040] InstReg=[03ff0263]  M  beq     t5, t6, pc + 36
+Cyc=        647 [0] PCReg=[80000040] uPC=[02] Bus=[80000044] RegSel=[0] RegAddr=[32] A=[80000040] B=[00000024] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+Cyc=        648 [0] PCReg=[80000044] uPC=[74] Bus=[80000044] RegSel=[0] RegAddr=[32] A=[80000040] B=[00000024] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+Cyc=        649 [0] PCReg=[80000044] uPC=[75] Bus=[80000040] RegSel=[7] RegAddr=[ 0] A=[80000044] B=[00000024] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+Cyc=        650 [0] PCReg=[80000044] uPC=[76] Bus=[00001000] RegSel=[7] RegAddr=[ 0] A=[80000040] B=[00000024] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+Cyc=        651 [0] PCReg=[80000044] uPC=[77] Bus=[80001040] RegSel=[1] RegAddr=[30] A=[80000040] B=[00001000] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+Cyc=        652 [1] PCReg=[80000044] uPC=[00] Bus=[80000044] RegSel=[0] RegAddr=[32] A=[80000040] B=[00001000] MA=[80000040] InstReg=[00001f17] F   auipc   t5, 0x1
+Cyc=        653 [0] PCReg=[80000044] uPC=[01] Bus=[fc3f2023] RegSel=[7] RegAddr=[ 0] A=[80000044] B=[00001000] MA=[80000044] InstReg=[00001f17]  M  auipc   t5, 0x1
+Cyc=        654 [0] PCReg=[80000044] uPC=[02] Bus=[80000048] RegSel=[0] RegAddr=[32] A=[80000044] B=[00001000] MA=[80000044] InstReg=[fc3f2023]     sw      gp, -64(t5)
+Cyc=        655 [0] PCReg=[80000048] uPC=[0d] Bus=[80001040] RegSel=[2] RegAddr=[30] A=[80000044] B=[00001000] MA=[80000044] InstReg=[fc3f2023]     sw      gp, -64(t5)
+Cyc=        656 [0] PCReg=[80000048] uPC=[0e] Bus=[ffffffc0] RegSel=[7] RegAddr=[ 0] A=[80001040] B=[00001000] MA=[80000044] InstReg=[fc3f2023]     sw      gp, -64(t5)
+Cyc=        657 [0] PCReg=[80000048] uPC=[0f] Bus=[80001000] RegSel=[7] RegAddr=[ 0] A=[80001040] B=[ffffffc0] MA=[80000044] InstReg=[fc3f2023]     sw      gp, -64(t5)
+Cyc=        658 [0] PCReg=[80000048] uPC=[10] Bus=[00000001] RegSel=[3] RegAddr=[ 3] A=[80001040] B=[ffffffc0] MA=[80001000] InstReg=[fc3f2023]  M  sw      gp, -64(t5)
+Cyc=        659 [0] PCReg=[80000048] uPC=[11] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[80001040] B=[ffffffc0] MA=[80001000] InstReg=[fc3f2023]     sw      gp, -64(t5)
+Cyc=        660 [1] PCReg=[80000048] uPC=[00] Bus=[80000048] RegSel=[0] RegAddr=[32] A=[80001040] B=[ffffffc0] MA=[80001000] InstReg=[fc3f2023] F   sw      gp, -64(t5)
+Cyc=        661 [0] PCReg=[80000048] uPC=[01] Bus=[ff9ff06f] RegSel=[7] RegAddr=[ 0] A=[80000048] B=[ffffffc0] MA=[80000048] InstReg=[fc3f2023]  M  sw      gp, -64(t5)
+Cyc=        662 [0] PCReg=[80000048] uPC=[02] Bus=[8000004c] RegSel=[0] RegAddr=[32] A=[80000048] B=[ffffffc0] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        663 [0] PCReg=[8000004c] uPC=[6a] Bus=[8000004c] RegSel=[0] RegAddr=[32] A=[80000048] B=[ffffffc0] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        664 [0] PCReg=[8000004c] uPC=[6b] Bus=[8000004c] RegSel=[1] RegAddr=[ 0] A=[8000004c] B=[ffffffc0] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        665 [0] PCReg=[8000004c] uPC=[6c] Bus=[80000048] RegSel=[7] RegAddr=[ 0] A=[8000004c] B=[ffffffc0] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        666 [0] PCReg=[8000004c] uPC=[6d] Bus=[fffffff8] RegSel=[7] RegAddr=[ 0] A=[80000048] B=[ffffffc0] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        667 [0] PCReg=[8000004c] uPC=[6e] Bus=[80000040] RegSel=[0] RegAddr=[32] A=[80000048] B=[fffffff8] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        668 [1] PCReg=[80000040] uPC=[00] Bus=[80000040] RegSel=[0] RegAddr=[32] A=[80000048] B=[fffffff8] MA=[80000048] InstReg=[ff9ff06f] F   j       pc - 0x8
+Cyc=        669 [0] PCReg=[80000040] uPC=[01] Bus=[00001f17] RegSel=[7] RegAddr=[ 0] A=[80000040] B=[fffffff8] MA=[80000040] InstReg=[ff9ff06f]  M  j       pc - 0x8
+Cyc=        670 [0] PCReg=[80000040] uPC=[02] Bus=[80000044] RegSel=[0] RegAddr=[32] A=[80000040] B=[fffffff8] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+Cyc=        671 [0] PCReg=[80000044] uPC=[74] Bus=[80000044] RegSel=[0] RegAddr=[32] A=[80000040] B=[fffffff8] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+Cyc=        672 [0] PCReg=[80000044] uPC=[75] Bus=[80000040] RegSel=[7] RegAddr=[ 0] A=[80000044] B=[fffffff8] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+Cyc=        673 [0] PCReg=[80000044] uPC=[76] Bus=[00001000] RegSel=[7] RegAddr=[ 0] A=[80000040] B=[fffffff8] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+Cyc=        674 [0] PCReg=[80000044] uPC=[77] Bus=[80001040] RegSel=[1] RegAddr=[30] A=[80000040] B=[00001000] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+Cyc=        675 [1] PCReg=[80000044] uPC=[00] Bus=[80000044] RegSel=[0] RegAddr=[32] A=[80000040] B=[00001000] MA=[80000040] InstReg=[00001f17] F   auipc   t5, 0x1
+Cyc=        676 [0] PCReg=[80000044] uPC=[01] Bus=[fc3f2023] RegSel=[7] RegAddr=[ 0] A=[80000044] B=[00001000] MA=[80000044] InstReg=[00001f17]  M  auipc   t5, 0x1
+Cyc=        677 [0] PCReg=[80000044] uPC=[02] Bus=[80000048] RegSel=[0] RegAddr=[32] A=[80000044] B=[00001000] MA=[80000044] InstReg=[fc3f2023]     sw      gp, -64(t5)
+Cyc=        678 [0] PCReg=[80000048] uPC=[0d] Bus=[80001040] RegSel=[2] RegAddr=[30] A=[80000044] B=[00001000] MA=[80000044] InstReg=[fc3f2023]     sw      gp, -64(t5)
+Cyc=        679 [0] PCReg=[80000048] uPC=[0e] Bus=[ffffffc0] RegSel=[7] RegAddr=[ 0] A=[80001040] B=[00001000] MA=[80000044] InstReg=[fc3f2023]     sw      gp, -64(t5)
+Cyc=        680 [0] PCReg=[80000048] uPC=[0f] Bus=[80001000] RegSel=[7] RegAddr=[ 0] A=[80001040] B=[ffffffc0] MA=[80000044] InstReg=[fc3f2023]     sw      gp, -64(t5)
+Cyc=        681 [0] PCReg=[80000048] uPC=[10] Bus=[00000001] RegSel=[3] RegAddr=[ 3] A=[80001040] B=[ffffffc0] MA=[80001000] InstReg=[fc3f2023]  M  sw      gp, -64(t5)
+Cyc=        682 [0] PCReg=[80000048] uPC=[11] Bus=[00000000] RegSel=[7] RegAddr=[ 0] A=[80001040] B=[ffffffc0] MA=[80001000] InstReg=[fc3f2023]     sw      gp, -64(t5)
+Cyc=        683 [1] PCReg=[80000048] uPC=[00] Bus=[80000048] RegSel=[0] RegAddr=[32] A=[80001040] B=[ffffffc0] MA=[80001000] InstReg=[fc3f2023] F   sw      gp, -64(t5)
+Cyc=        684 [0] PCReg=[80000048] uPC=[01] Bus=[ff9ff06f] RegSel=[7] RegAddr=[ 0] A=[80000048] B=[ffffffc0] MA=[80000048] InstReg=[fc3f2023]  M  sw      gp, -64(t5)
+Cyc=        685 [0] PCReg=[80000048] uPC=[02] Bus=[8000004c] RegSel=[0] RegAddr=[32] A=[80000048] B=[ffffffc0] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        686 [0] PCReg=[8000004c] uPC=[6a] Bus=[8000004c] RegSel=[0] RegAddr=[32] A=[80000048] B=[ffffffc0] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        687 [0] PCReg=[8000004c] uPC=[6b] Bus=[8000004c] RegSel=[1] RegAddr=[ 0] A=[8000004c] B=[ffffffc0] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        688 [0] PCReg=[8000004c] uPC=[6c] Bus=[80000048] RegSel=[7] RegAddr=[ 0] A=[8000004c] B=[ffffffc0] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        689 [0] PCReg=[8000004c] uPC=[6d] Bus=[fffffff8] RegSel=[7] RegAddr=[ 0] A=[80000048] B=[ffffffc0] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        690 [0] PCReg=[8000004c] uPC=[6e] Bus=[80000040] RegSel=[0] RegAddr=[32] A=[80000048] B=[fffffff8] MA=[80000048] InstReg=[ff9ff06f]     j       pc - 0x8
+Cyc=        691 [1] PCReg=[80000040] uPC=[00] Bus=[80000040] RegSel=[0] RegAddr=[32] A=[80000048] B=[fffffff8] MA=[80000048] InstReg=[ff9ff06f] F   j       pc - 0x8
+Cyc=        692 [0] PCReg=[80000040] uPC=[01] Bus=[00001f17] RegSel=[7] RegAddr=[ 0] A=[80000040] B=[fffffff8] MA=[80000040] InstReg=[ff9ff06f]  M  j       pc - 0x8
+Cyc=        693 [0] PCReg=[80000040] uPC=[02] Bus=[80000044] RegSel=[0] RegAddr=[32] A=[80000040] B=[fffffff8] MA=[80000040] InstReg=[00001f17]     auipc   t5, 0x1
+*** PASSED ***
+#----------Stats--------------
+#
+#   CPI    : 6.87
+#   IPC    : 0.15
+#   cycles : 694
+#
+#   Bubbles      : 85.447 %
+#   Nop instr    : 0.000 %
+#   Arith instr  : 7.637 %
+#   Ld/St instr  : 1.585 %
+#   branch instr : 1.873 %
+#   misc instr   : 3.458 %
+#   Ld/St non0ofst instr  : 0.865 %
